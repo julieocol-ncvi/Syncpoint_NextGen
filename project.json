@@ -1,0 +1,1710 @@
+{
+  "name": "Syncpoint_NextGen",
+  "projectId": "98185cd1-d69a-4ea6-990c-9bec2422c88a",
+  "description": "for regression testing",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[24.10.4]",
+    "UiPath.Testing.Activities": "[24.10.1]",
+    "UiPath.UIAutomation.Activities": "[24.10.3]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "26.0.192.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "ExecutionTemplate",
+        "fileName": ".templates\\TestFramework.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "177f20b7-edb1-496d-b89a-d4462287c773",
+        "executionTemplatePath": ".templates\\TestFramework.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "81378620-ee12-479b-a7ac-2deca691ffea",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByCardNumber\\TC01_SearchByValidCardNumber.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "67159062-012d-4e24-905f-2a441dedc3d0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByCardNumber\\TC02_SearchWithoutInput_ErrorMessage.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b794bad2-0322-4632-a610-df63380db3cf",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByCardNumber\\TC03_SearchNoRecordFound.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b79a2180-b404-4e80-bf2b-e969b7979a54",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByCardNumber\\TC05_ClearButtonFunctionality.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3522b7ee-798a-448a-8074-b7f16f004523",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC01_SearchByFirstAndLastName.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a28b4774-1b66-4575-98da-0c5baace4cc5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC02_SearchByClientNumber.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "67258357-6013-459b-ac65-ed05dc509c06",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC03_SearchByMobileNumber.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7395a2e7-2f99-42b7-a1c6-a144aa081c8f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByCardNumber\\TC04_CardNumberAcceptsNumericOnly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5dd4236a-97da-42a2-b90e-cc5209db70b7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC04_SearchByCombination.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4d68306f-ad67-40d7-91dc-cd7df27a470d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC05_SearchWithoutInput_ErrorMessage.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5dd35427-48cd-44ad-bfa2-54edd350eaea",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC06_SearchNoRecordFound.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a5114f85-55bb-468e-a18c-12532d29fc2e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC07_SearchSingleNameOnly_ErrorMessage.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "705b2d1a-3140-455d-903e-d31e4192dc36",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC09_ClientNumberAcceptsNumericOnly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7c327024-0f12-4578-af23-4e2781de766c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC10_MobileNumberAcceptsNumericOnly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "98b4dc84-afd7-4beb-bcb5-def4c3b0b168",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC08_ClearButtonFunctionality.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "35f6dd32-4d0b-489a-a294-eb92cf4c0051",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC11_ResultsPagination.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "73ce8bb8-3294-4674-a5a2-d48185a5099d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC12_PartialMatchResults.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "06cef67b-ecc3-4b4c-8f78-bbe9f44ad874",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC13_CreateNewRecordButton.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "dd3f796d-d1f2-4dde-9bb9-41cec9d744ee",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByCardNumber\\TC06_SearchUsingF3Shortcut.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5e4a09c3-48ed-4211-9291-4b689253cb7c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC01_DashboardDisplaysOnClientSelection.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2260075f-f930-444e-8e80-637b71986b14",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC02_VerifyClientNameAndNumber.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f4827978-e7e1-4c57-a433-a45a4715d3f0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC03_AMLRiskRatingDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "528084ff-85f1-4ff9-b6af-3e92bb662e8d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC04_KYCStatusDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "644742ad-8e85-4268-9f92-5cacaaa1a52e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC05_ClientImageDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d8c5a438-9ef0-4007-a4ba-0c9dcdf5d778",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC06_24KCardInfoDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e1cd7056-e089-4b1e-aeab-8eb44a30c0da",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC07_24KApplyButtonForNonMember.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "45dddab0-d31b-4dbf-bf0d-d9ac7ac3cad6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC08_SubscriptionStatusSubscribed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "baf0a8fc-e931-444d-a5a5-2e55fd443e46",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC09_SubscribeButtonForNonSubscriber.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0335627a-0d6d-44d4-894a-9c79bd5e4429",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC10_BackButtonRedirects.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b1844505-f93e-495d-b59b-b836350ea56c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC11_AnalyticsTop3Services.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2d22dae6-6206-4d77-aa33-299bae75b943",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC12_AnalyticsRecentTransactions.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5fd2e866-1464-40e8-a8c1-e39c2b4ef7b5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC13_PJLIEmployeeIndicator.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f21191cc-0ac6-41ad-a098-cb86dba53a40",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC14_AlajeraTaggingIndicator.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9a4dce78-adc7-411b-b2c4-01e8aad9e417",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\OffersPopup\\TC01_OffersPopupAppears.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "da563488-ffc4-4fc9-b125-725cbfd639c9",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\OffersPopup\\TC02_CloseOffersPopup.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "61ad32e7-f868-4d2a-af78-199c170f4d04",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC01_RedirectToViewDetails.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6b74080f-ea03-4004-b032-49aa2c49a424",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC02_DetailsInReadOnlyFormat.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3c242e1e-d1a0-4a2b-99b2-11a7894724e3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC03_LastUpdateLogsDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "64395c1e-fee4-4685-93fb-0638fc1ef0c4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC04_RecordCreationDateDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "959fe206-cf91-4b18-81b1-8d73d876cf6a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC05_OTPVerifiedIndicator.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "75c02497-1ad1-4aaf-ad58-ef73e843e329",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC06_EditButtonAvailable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cdac15ac-93d6-4ee4-81be-084c6db0cefa",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC07_OnlineEDDAvailable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "85006589-15c5-401c-9053-52535f3e46b7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC08_AMLRiskProfileDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a5a7558f-23f8-4980-b077-2ceed5fb1693",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC01_RedirectToEditModule.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2011d250-1f12-4481-a908-7d84a948899e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC02_NameFieldsUneditable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b590d156-24cc-4356-a7ff-8c75ee672d2e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC03_DateOfBirthUneditable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "28df41ed-9182-4e16-a77f-be492e154063",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC01_ImageViewerFormOpens.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2a1fd3ca-e5ea-48ea-a453-d8b65392fa07",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC01_ReportIconDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "40c0e9e0-4890-4f35-9d6e-fa39d9ab53f8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC02_ReportClientWindowOpens.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9ed84a9f-9f91-4e08-9e6d-74b10833903a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC03_SubmitReportSuccessfully.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c578971e-fb68-425a-8dfc-feefcb9871f3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC04_EditAllowedFieldAndSave.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bdb623b0-bdd5-4045-a710-bfbd82e0153e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC05_ModificationLogsUpdated.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e48b7c5d-8faf-4bfa-bac2-2c9f035ed3bd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC06_RealTimeUpdateAfterEdit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "54d67546-c210-4d63-8761-2a614362fdee",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC07_OTPTriggeredOnMobileChange.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d72e42de-f062-4d95-b446-b2368253bd03",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC02_NavigateBetweenImages.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9408f2dc-46ec-4b70-859e-6f46c34194c4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC03_MaxImageReminderDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cab1d5fe-743b-4443-8f22-c9d3692002c0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC04_UpdatePictureButtonAvailable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e184c7ad-95a5-4d2d-be77-3ec0c26e74d7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC05_ImagesSavedInBackendFolder.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bd029d69-34d4-4dc0-b3f4-fd5c07495309",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC01_EDDSectionAvailable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c532e546-fd80-43ba-b369-fb818b4748ec",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC02_EDDPromptedForHighRisk.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "10ede242-6c28-4ce6-9d10-0100593a3697",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC03_EDDChecklistDisplaysQuestions.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "556bd985-1eec-4a47-baf8-43f50b403b86",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC04_EDDAutoPullsCISData.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4da846f6-7dee-4ff6-aa0a-24f6e7df0a03",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC05_EDDIncompleteSubmissionBlocked.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "27d58d0f-276b-4b80-9208-43d78e8c090a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC06_EDDSubmitSuccessfully.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e04f96bc-f32b-4431-9ae8-e3ea2f5df4b8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC01_CreateBasicKYCSuccessfully.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cb72a2e6-b1f7-48d5-b5da-e8a46194883d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC02_CreateFullKYCSuccessfully.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b4cc9562-4f1f-4962-8b7f-8eede8159ee8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC03_NationalityDefaultsToFilipino.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b761082b-d211-45c2-a344-6e5599342870",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC04_CountryDefaultsToPhilippines.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "620a59aa-d41a-4f11-a3c5-d55dc36e899e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC05_DynamicDropdownProvinceCityPostal.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "36c051f0-d3d0-434a-8690-cf983362655c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC06_SameAsPresentAddressCheckbox.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "74b8a0a3-7d5f-400d-9cf4-f1ed58ce96db",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC07_NoMiddleNameTickbox.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "74d11266-a67a-4945-a045-c7089e5266d8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC08_AMLRiskRatingFieldNotEditable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e50edf80-0c18-4d83-88e0-c07d2c8b96f4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC09_SaveButtonDisabledBeforeAMLProfiler.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a2920ab5-1722-4bcd-9dbc-9bd435fb4f43",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC10_SaveButtonEnabledAfterAMLProfiler.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "93bb27a9-6958-495f-9a2d-4487e6180544",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC11_OTPSentOnRecordCreation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cc486277-a032-4ec2-acb9-735e28e4b9b5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC12_ClientNumberGenerated.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ab0ec7ec-1e2d-40e0-bf4d-67905d66b4ca",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC13_24KVirtualCardNumberGenerated.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4121c768-efd8-4428-bed2-ca043cebdeee",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC14_RequiredFieldsIndicatorDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "273f2248-89e1-44ce-8ee7-4975eccb7a4e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC15_IncompleteBasicFieldsError.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "38d32584-46df-4276-9c65-1514b438cf88",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC16_IncompleteFullFieldsError.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "03f688d6-263a-4cfe-a7bd-37aec0cf5042",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC17_MinimumAgeValidation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0d34dae8-95d3-4f69-911a-00b0cb03f479",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC18_JunkInputRejected_SequentialLetters.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6eed791b-e327-4784-ab03-aeb30e5473fc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC19_JunkInputRejected_RepetitiveLetters.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2d0fb75d-5774-4f49-b55b-46c420559551",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC20_JunkInputRejected_SingleLetter.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "397d1284-569a-49db-909d-ebfe324bf74e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC21_JunkInputRejected_InvalidMobileNumber.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "51396710-10e5-4922-a942-17d551fc268b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC22_DuplicateRecordBlocked.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0c05cb05-b6d3-4edd-a9bf-29e5dab3ac55",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC23_DuplicateIDRegistrationBlocked.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0221d7ed-08c7-4eb5-bcb0-b7342b1773b0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC24_SpecialCharactersAllowedInName.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9682ed54-0a8a-406e-ac63-8713dad6f813",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC25_ViberNumberCheckbox.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9d4dac6d-72f0-4288-9816-7bbf3a690b28",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC26_TwoIDsEntry_PrimaryMandatory.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e0a60d21-c7a5-464f-bc8c-d33a11cf5497",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC27_ForeignNational_DifferentCountryCode.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6366d27e-a641-4908-84ea-0915c7502169",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC28_ForeignNational_SameAddressDisabled.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "78d35939-a994-445a-9aeb-08bfa898d68b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC29_KYC_Type_Toggle_Adjusts_Required_Fields.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a1bd8d57-4851-45c4-b3c3-b9d57f52c5bd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC30_Optional_Fields_Accept_Blank_Input.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6460ff43-113a-42c9-9249-6cacb79195f1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC31_Junk_Input_Rejected_Alphanumeric_In_Name.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "48ed6397-7616-4690-ab8a-ade7f6dc7f9a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC32_Place_Of_Birth_Combined_Dropdown_Free_Text.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "93f788ee-4dca-4f3e-b056-ad939e6439a6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC33_Place_Of_Birth_Foreign_National_Free_Text.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5c8c705e-d2f3-4578-8e61-c0bc198e3713",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC34_Messenger_ID_Field_Available.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3f955727-0767-4bb6-a1b6-b1060042a7df",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC35_Fuzzy_Logic_Duplicate_Detection_Near_Match.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2a093d07-6b20-4fbd-827f-2b9b77362c9a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC36_Offline_Record_Creation_Without_OTP.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0a56cf47-f0fb-478e-9e75-50f2b3d7a898",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC37_Offline_Record_Pending_OTP_Notification_On_Reconnect.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "61ff7c7f-b1f3-4161-86b6-d9a31bba9957",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC38_Offline_Record_No_OTP_Verified_Indicator.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "83d4a4d8-37ae-4c65-8d2f-723a92eada19",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC39_Client_Details_Saved_In_Database.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9af9f8d2-3b51-48a5-a74f-ae6c3cfd0469",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC40_ID_Number_Format_Validation_TIN.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "df3a05fa-97a1-49a6-acde-b15c07d7d10b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC41_ID_Number_Format_Validation_SSS.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "61d3ef81-76cc-4a0d-b5fb-1bcd25bf7e76",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\CreateRecord\\TC42_Checkbox_Single_And_Multiple_Selection_Validation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "81a38bc4-1946-42eb-9767-ec51ffcbf979",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC07_EDD_Submit_Confirmation_Message.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b4ca8d8c-eb1e-4115-a83f-7dffd2a2cc14",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC08_EDD_Routed_To_AOM_With_Email.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8687f2c0-4499-480d-8d95-c1a781a9c070",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC09_EDD_Auto_Routes_To_Correct_AOM.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "27f7ac31-5a25-4ce9-953b-1a607a28d3f3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC10_EDD_Notification_In_Customer_Dashboard.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0026c57f-9d8d-483b-ac8c-7069b97b8dcc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC11_EDD_Checklist_Button_Opens_Form.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "492ed86f-d04a-4739-b51b-86313c0f1af8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC15_SearchUsingF3Shortcut.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "99fc3f94-653c-4ce1-a6e2-2925ec5905c3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC16_BirthdateFormatValidation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "450d19e9-51ad-4910-be3a-973f194e341a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC18_LeadsGenCreateRecordPrefill.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fb29995e-f857-4fb3-90ab-ee592388b2f5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC17_SearchLastNameOnly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2671faf8-adf4-48d3-b022-883beb593c1a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByCardNumber\\TC07_SearchPartialCardNumber.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fae732af-e885-4e34-9789-5ef657123511",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC15_StarRatingDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "07828c67-000b-43f9-b62f-a295d9957874",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC16_BankDetailsDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4a606773-5ef1-4a1f-ad2d-11a3445c0909",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC17_BankDetailsDisabledNoBankAccount.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "287e5a27-6418-43f8-8ab2-ca3c6625665e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC18_BankAccountApplyButton.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e121e472-9783-458a-9341-921b3fd3c283",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC19_ClientImageMaximizable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "95d65034-3247-43c7-89d4-da1d4fc56161",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC09_OnlineEDDRedirectOnClick.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0051da19-101e-4b31-9b22-f5c933ac4945",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC08_KYCLevelDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ad45dbb9-4ce6-4922-aa6d-8b97a503adda",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC09_FullKYCLevelCannotBeChanged.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "989f5959-87af-44f6-b7b7-2c321058f3c3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC10_UpgradeBasicToFullKYC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "05fe614a-a782-4c10-bf3c-1ce076cf4edd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC11_NameAndDOBUneditableDuringUpgrade.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ea4fe59e-397d-40b3-9c5b-e594d3917b19",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC12_EditBasicKYCWithoutUpgrade.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "333df31c-2f2b-468b-a696-9f900b4fb797",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC13_LastUpdateLogsVisibleInEdit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7ea4e6cc-1df7-48e8-ab9f-370e22ad1a56",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC14_PersonalDetailsSectionUneditable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "efc33301-99ee-44b6-b043-95bef7b5118d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC06_AddIDButtonBelowMaxLimit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c45b6c58-c9a5-410f-b01a-ad449d793863",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC07_SevenImageLimitValidation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9fef01cd-468a-4b94-84cc-1e4835a5ab81",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC08_SavePictureConfirmationPrompt.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "60a84a03-c21b-4aba-bb6c-576386be372b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC09_SuccessfulUploadNotification.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4f1b59f6-78e8-4903-9da5-29267aff70b6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CheckAvailableIDs\\TC10_UnsuccessfulUploadNotification.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0ca37952-a6ba-4de4-b9dc-c667844383ce",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC04_ReportRoutedToHOPCD.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "78f1b95d-9ec3-4959-83ce-924c4184ce92",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerSearch\\SearchByClientDetails\\TC14_LeadsGenerationFallback.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4e7e5fdd-6182-4a78-89ec-080a922f143f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC20_FullyVerifiedDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d4ca1718-2cfc-4cc2-9598-558e3fdb5008",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerDashboard\\TC21_BasicKYCDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1c6a8a44-5d9b-44eb-b827-a5216e1cc6bf",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC01_AccessAMLRiskProfilerUI.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0d0cb8ee-b70c-4c67-b56d-fcb49a4b0e46",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC02_SubmitAMLQuestionnaireResponses.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1adc6f4f-98ab-4951-9df1-84dd568bfebd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC03_AutoSelectResponsesFromCISData.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "73a054ec-5f69-4a02-95db-7e49bb5ddd40",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC04_SaveCompletedRiskProfiler.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "60ff162c-5605-4d8e-876c-a48d620d3721",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC05_AutoAssignRiskRating.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9e9e4361-4cea-4122-8709-4f03b313138d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC06_ProvideAdditionalInput.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9090f83a-f25e-4c5b-95cf-bc81a0018ad5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC07_ClearAllResponses.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b6c8b38d-3062-4e24-99dc-fc55d256d121",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC08_LogAMLRiskProfilerActivities.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b56a0814-65bd-4d16-a346-e8f1c20f217f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC09_RequireAMLProfilerForBasicKYC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7252f241-2f62-4b57-b1bf-7f823e9deff1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC10_AdditionalInputsFormat.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "69c9be78-7999-4ffc-be91-b5929cac1907",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC11_AMLEDDBackgroundDisplay.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "daac7a83-2a4a-4f53-b8c4-3779eb897ba4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC12_Q5Q6SingleSelectionOnly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6e006d9b-f4bc-429d-aa75-cfe1370577a0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC13_AnswersPersistOnRevisit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e0c73690-49d2-4361-b023-9376e2c80e64",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC14_CorrectAMLLabelNotAMLA.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1bb753e8-aff3-4117-86bb-f062fede7c13",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\AMLRiskProfiler\\TC15_UIUXDesignCompliance.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9691cc77-5c47-41c1-b7e7-d8c34655df9f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC01_ImageCaptureFormStatusAndSaving.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1fa2fad0-aab3-4868-aa04-df332892c1e5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC02_CannotGoBackBetweenBackPartOfID.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f3c9c568-7c52-40ad-bf7f-88df43695abb",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC03_GoBackFeatureWorksCorrectly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "963dd8c1-7f4b-4400-b85f-d1520226cbe8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC04_CaptureImageDisabledNoCamera.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bea19970-7b51-413e-89c9-42b0c7399d77",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC05_DefaultCaptureMethod.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "26512307-0f17-4e1e-bdd9-9b5f659ecac6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC06_NextButtonNotChangeToSaveAfterGoBack.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6f1176eb-bb2a-4081-b06c-6cef134da213",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC07_CorrectStatusDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2a961bc1-01e5-4837-8e98-a7c2d5592b07",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC08_ImageSavedAfterClickingSave.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a8fcd3f6-3dad-41a3-83a7-982df8b1dc96",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC09_SecondaryIDIsOptional.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "63fd50f9-38b0-4b00-a873-9407bc1b6312",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC10_OptionToCaptureOrAttach.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f5a0232c-9051-4bd5-989c-b2b69296b0f7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC11_SaveAllAttachedImages.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cab3954d-27da-49da-8b6a-9c019f5b1d15",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\ImageCapture\\TC12_UploadBehaviorWhenOffline.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "47bb78a4-4c77-4310-9caa-717fa96d8b03",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC01_VerifyKYCTextboxFieldsValidation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ce431f37-1111-4b08-b044-620814a9540a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC02_VerifyDropdownPredefinedValues.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "64620062-610d-4af1-9c3c-968654a98a5d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC03_VerifyAutoCopyPresentToPermanentAddress.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d4c137c1-9352-491b-9230-9a64462fdeea",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC04_VerifyMinimumAgeEnforcement.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e6bc77b8-2d93-4368-84fb-56951dd5b1d5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC05_VerifyMobileNumberWithCountryCode.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "356bf067-d438-43ba-ab98-218177afcea4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC06_VerifyViberNumberCheckbox.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6a205505-547c-4677-994d-96b3d756c19f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC07_VerifyNoMiddleNameCheckbox.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5c37aec9-d8af-42f6-a0c2-27862cc7d594",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC08_VerifyPossibleDuplicateDetection.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "72d5b9e2-18f0-42ab-b689-90597fa609b0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC09_VerifySaveRecordAndGenerateIdentifiers.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c3b2faf8-b7e9-4508-a18e-f998f572a077",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC10_VerifyCreateNewRecordButton.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b2663291-ffd4-47b4-90e8-815cb2bac5c6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC11_VerifyDropdownValidationErrorMessages.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "71c4f468-ace0-4acf-9241-33639b0b39ec",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC12_VerifyPostalCodeFieldFormat.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a1aa1e60-cd4f-49fe-a75c-6a17abcafd31",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC13_VerifyNoMiddleNameDisabledDisplay.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "668fb91f-7a13-40b6-9fb0-56c58b2cca95",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC14_VerifyDOBInvalidDayValues.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f224d419-b060-4c6d-b4ff-235c9b2c9f14",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC15_VerifyDOBNoFutureDates.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "893b372d-282d-43a2-bede-dfca9e1215d5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC16_VerifyHotlineAndInvalidPhoneRejected.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "931cdd41-c8a8-4972-9e4f-e6321faa5075",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC17_VerifyBirthdateMinimumAgeRestriction.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "04028a75-ccfd-454d-a060-9d73246dda43",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC18_VerifyKYCTypeConfirmationPrompt.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a8ebf661-96ac-4134-931e-fc80ffde0355",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC19_VerifyAutofillAreaCode.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6e5a06f9-3bd0-4f3a-90c1-cfaae2367f07",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC20_VerifyNicknameNoNumbers.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e65758e8-516f-43b6-b155-6c26554b7002",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC22_VerifyConsentCheckboxRequired.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "61ed7fca-2d98-4fcc-acbd-98a37c98e26c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC23_VerifyMarketingConsentPrompt.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f8054aa5-560d-4b7c-b01f-409097e617b4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC24_VerifyAMLRiskRatingUpdatePrompt.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "69ac9193-879e-44ae-92bf-a33721474ca0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC25_VerifyNameSuffixInAllPrompts.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "158cd39d-e5af-4fa4-8969-56884a602ba1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC26_VerifyDropdownListPosition.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a15684ad-adc5-4e23-8e01-1e69dfd9764f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC27_VerifySpecialCharEnye.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "738b4894-ebe1-468d-ba0e-cbd3b9e7f245",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC28_VerifyBlacklistedNationalityBlocked.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "64a14537-d5de-4988-9ead-aea4ce4d5063",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC29_VerifyBeneficiaryDOBReflectsAfterSelection.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c188e7f7-1953-4218-8e75-a6e3b99625d7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC30_VerifyBeneficiaryDOBNotCleared.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "de0c1dd2-9d94-402e-af2d-d253bcfdc279",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC31_VerifyPrimaryIDExpirationNotRequired.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c7a8dcb4-b544-4ae7-a896-02c1bba02efd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC32_VerifyNameFieldsNoMultipleSpaces.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6a3132cc-8289-4acd-8d56-71af05567695",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC33_VerifySecondaryIDExpirationNotRequired.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fa7ad093-6409-435e-99a3-90a8ded9ff6b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC35_VerifyAuditLogsForRecordCreation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f9545061-57a1-42c9-b7ea-c794f2a3d572",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC36_VerifyNationalityDefaultFilipino.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "729377c4-29e6-45fe-9272-bea286892909",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC37_VerifyCountryDefaultPhilippines.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8bea6670-8242-4693-8165-f23f1294f3bd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC38_VerifyDynamicDropdownProvinceCityPostal.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7730241c-34c2-4aba-b9d1-e67db470807b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC39_VerifyAMLRiskRatingNotEditable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2aa00432-2bc0-4743-a850-8da53f4bdf7b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC40_VerifySaveWithoutAMLProfilerError.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1d42db7f-ffa9-4837-bb80-762475e24dc4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC41_VerifyOTPPopupOnSubmit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6cd5e551-2488-4548-b046-0bc48700ba72",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC21_VerifyRepetitiveCharsRejected.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ef66a065-b919-4d10-9587-77248f1ea115",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\KYC\\TC34_IncompleteFullFieldsError..xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2b663895-3595-4f76-a350-13581e59047f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC01_RiskPopupAppearsOnSelection.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a8d99bc1-00f4-4ee8-88f1-6c41569dcc21",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC02_RiskPopupDisplaysClientDetails.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e3b2023f-ccb9-4439-b047-8f912021d96f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC03_HandlingGuideDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2b3d24fe-90ba-4349-970f-42a2ab6457b8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC04_ClientImageInRiskPopup.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "260b6549-f0ca-422b-b60b-411a9cfc76cc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC05_ConfirmButtonClosesPopup.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "47c60b38-de7e-413d-8fbc-cbc19080560f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC06_HighRiskAuthCodePrompt.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f7bdcff6-f7e4-47fc-b875-4a7c2a18ad65",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC07_ValidAuthCodeAccepted.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "01bbf317-c492-45d2-bad5-cde259fa898a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC08_InvalidAuthCodeRejected.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b3d1c9de-61eb-469e-940c-cd9909af3625",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC09_AcknowledgmentNoteDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1279de8e-bb51-4918-acfe-745a1437ef15",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC10_BlacklistedClientBlocksTransaction.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "83f81df6-2fd9-4268-a19f-eee4a918522e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC11_RiskClassificationBelowImage.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "02c454bc-4117-4815-b88b-e4dca3f92261",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC12_RemarksSectionDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "433e34dc-98cd-4e45-a060-45c81bb60982",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC13_AuthCodeReminderMessage.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6fe29678-64cf-45e4-a04a-dec23910ec60",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\CustomerRisk\\TC14_AuditLogGeneratedOnScreening.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3a1ca36e-4ffc-48b2-8c3d-b7bdce2f5f45",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC01_RiskPopupAppearsOnSelection.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "594902fa-88c8-4739-adc4-97c2b890d4d9",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC02_RiskPopupDisplaysClientDetails.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8bf19756-9911-440f-9510-116e229aba91",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC03_HandlingGuideDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "04df9b16-9d64-49b7-93a8-b49d30e09284",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC04_ClientImageInRiskPopup.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "be143ca1-474b-4eca-bdaa-6b2f3b3cef62",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC04_XButtonNotDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6752add0-7fb0-4f55-97ec-cf4624605e33",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC05_DashboardLabelCorrect.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "131479fa-189c-459d-92e9-e405cf599766",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC06_BlacklistedClientBlocksTransaction.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3070d5ce-fc1f-43be-881e-379a85d24929",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC07_AuthCodeRequiredForHighRisk.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f846647a-dde1-4361-80aa-6f86b8bed235",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC08_ValidAuthCodeAccepted.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6e9c025b-a0ce-4cf0-9496-fc0f2025a98b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC09_InvalidAuthCodeRejected.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7ce3d080-271d-4ca1-b79d-7e92164a0995",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC10_ViewAgainPopup.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d0183762-8e43-4a9a-b3bd-ce21fc5a2431",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC11_AuditLogCreatedOnScreeningMatch.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8ddfb61b-7cce-4c60-94d5-6b845fd82e98",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC12_AuditLogContainsCorrectDetails.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "16f28d5c-a271-49f7-954c-bd89ca6f0a11",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC13_NoPopupForCleanClients.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6f3482d2-51a7-41b8-bc30-069ed71b3719",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC14_NonBlacklistedNotBlocked.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

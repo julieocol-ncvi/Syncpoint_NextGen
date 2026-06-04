@@ -1,0 +1,6 @@
+{
+  "Name": "Syncpoint_NextGen",
+  "ProjectType": "Tests",
+  "Description": "for regression testing",
+  "MainFile": "Main.xaml"
+}

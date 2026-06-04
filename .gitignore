@@ -1,0 +1,22 @@
+# UiPath ignore rules
+.local/
+.objects/
+.screenshots/
+.tmh/
+.settings/
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/

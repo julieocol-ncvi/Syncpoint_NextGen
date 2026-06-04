@@ -1,0 +1,475 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TC03_VerifyAutoCopyPresentToPermanentAddress" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="830,5593.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="streetName" />
+      <Variable x:TypeArguments="x:String" Name="barangayText" />
+      <Variable x:TypeArguments="x:String" Name="cityText" />
+      <Variable x:TypeArguments="x:String" Name="provinceText" />
+      <Variable x:TypeArguments="x:String" Name="countryText" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="483.2,5570.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,5256" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="postalCode" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="8502bf37-f6ae-4d39-85c9-f0e66b0c2177" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="874, 907, 172, 36" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6.Label_Q*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6.Label_Q*' role='text' check:text='Yes, I Understand' /&gt;" Guid="79c00e44-9820-4e82-bbbe-d865166ac08a" InformativeScreenshot="b876919d02a40c923917a649488e0250.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindow' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="8502bf37-f6ae-4d39-85c9-f0e66b0c2177" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="838, 886, 244, 78" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6' role='push button' check:text='Yes, I Understand' /&gt;" Guid="0fa28b1f-0f8c-454f-93eb-9a8c11a9a501" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NewRecord - Invoke Workflow File (Reusable\NewRecord.xaml)" sap:VirtualizedContainerService.HintSize="416,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable\NewRecord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="7" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Country'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="PHILIPPINES" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="1fd487eb-61b7-4262-ad9e-9d3e6445e316" CvElementArea="481, 748, 423, 64" CvType="InputBox" DesignTimeRectangle="483, 749, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select country' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select country' role='editable text' automationid='' /&gt;" Guid="b31c7c91-958e-435f-8e07-f17c2107057c" InformativeScreenshot="eca09e24763a414b9fff8e50ddf08d85.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1fd487eb-61b7-4262-ad9e-9d3e6445e316" CvTextArea="480, 716, 96, 25" CvTextArgument="* Country" CvType="Text" DesignTimeRectangle="483, 712, 93, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Country' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Country' role='text' automationid='' check:fulltext='* Country' /&gt;" Guid="c9ecdb75-ad05-4136-bcca-86a7360294a2" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PHILIPPINES'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="b61b03e3-733d-4a32-b222-75483d6419cb" CvTextArea="506, 833, 138, 24" CvTextArgument="PHILIPPINES" CvType="Text" DesignTimeRectangle="483, 816, 421, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='PHILIPPINES' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='PHILIPPINES' role='text' automationid='' check:fulltext='PHILIPPINES' /&gt;" Guid="f496642c-3d34-468c-aab4-d6cf64e90b21" InformativeScreenshot="6a65056bd9dcccdef79e409b68a87085.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* State/Province'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="CAMARINES SUR" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="f465c45a-1a9a-42dc-b36b-353fedd8139f" CvElementArea="919, 748, 423, 63" CvType="InputBox" DesignTimeRectangle="921, 749, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select state/province' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select state/province' role='editable text' automationid='' /&gt;" Guid="826b457a-519d-4317-acfd-444f6a6351f1" InformativeScreenshot="87e8f2ff318bc7edd0c28a5982adff1e.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f465c45a-1a9a-42dc-b36b-353fedd8139f" CvTextArea="918, 716, 157, 22" CvTextArgument="* State/Province" CvType="Text" DesignTimeRectangle="921, 712, 154, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* State/Province' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* State/Province' role='text' automationid='' check:fulltext='* State/Province' /&gt;" Guid="cd21ca9e-9ebf-4835-9bad-c7feabd5d839" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CAMARINES SUR'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="7506ae2f-fdda-4183-b655-14a63718a909" CvTextArea="944, 833, 189, 24" CvTextArgument="CAMARINES SUR" CvType="Text" DesignTimeRectangle="921, 816, 421, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='CAMARINES SUR' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='CAMARINES SUR' role='text' automationid='' check:fulltext='CAMARINES SUR' /&gt;" Guid="04f65d7c-6882-48df-9ed3-8e43de2a4f1e" InformativeScreenshot="0cde17d66e4279516cb8fd1ae6f004f4.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Town/City'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="NAGA CITY" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="dbcb900e-aed7-43b6-997d-7597e770e29e" CvElementArea="1357, 748, 424, 64" CvType="InputBox" DesignTimeRectangle="1359, 749, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select town/city' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select town/city' role='editable text' automationid='' /&gt;" Guid="43753d1e-ad69-46da-827d-28cfeb266ca3" InformativeScreenshot="928bfa0308d4de6f7efc4a4b23b973dc.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="dbcb900e-aed7-43b6-997d-7597e770e29e" CvTextArea="1356, 716, 115, 27" CvTextArgument="* Town/City" CvType="Text" DesignTimeRectangle="1359, 712, 112, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Town/City' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Town/City' role='text' automationid='' check:fulltext='* Town/City' /&gt;" Guid="e514476a-3b03-48a0-a090-5a1ec0bcbeb8" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NAGA CITY'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="5dd0ee05-efc5-4d94-83c9-5369648d36f3" CvTextArea="1382, 833, 125, 24" CvTextArgument="NAGA CITY" CvType="Text" DesignTimeRectangle="1359, 816, 421, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='NAGA CITY' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='NAGA CITY' role='text' automationid='' check:fulltext='NAGA CITY' /&gt;" Guid="1e9e1f08-b157-456a-a24f-7830d6bc5594" InformativeScreenshot="d027293980e4ebb87902f373b01bab20.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Barangay'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="ABELLA" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="1fbd32ea-9fb3-4b80-a6d2-424757861951" CvElementArea="481, 900, 425, 64" CvType="InputBox" DesignTimeRectangle="483, 903, 421, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select barangay' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select barangay' role='editable text' automationid='' /&gt;" Guid="89774aed-2d70-475b-bce4-8de62e41368c" InformativeScreenshot="fcd060b71604671147e24b7695e8f0b6.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1fbd32ea-9fb3-4b80-a6d2-424757861951" CvTextArea="480, 869, 108, 27" CvTextArgument="* Barangay" CvType="Text" DesignTimeRectangle="483, 865, 105, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Barangay' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Barangay' role='text' automationid='' check:fulltext='* Barangay' /&gt;" Guid="c941c29a-917d-41f3-977a-b9b64ca47d55" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ABELLA'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="3d2e33c9-9de6-4889-8b6d-91906bb97a55" CvElementArea="479, 836, 429, 63" CvType="InputBox" DesignTimeRectangle="483, 840, 421, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ABELLA' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ABELLA' role='text' automationid='' check:fulltext='ABELLA' /&gt;" Guid="8d12ea65-4e42-4c4d-b4a9-af6a08506432" InformativeScreenshot="f54c5fbf6e1cdaa65a86e28f22569217.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3d2e33c9-9de6-4889-8b6d-91906bb97a55" CvElementArea="479, 836, 429, 63" CvType="InputBox" DesignTimeRectangle="483, 865, 105, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Barangay' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Barangay' role='text' automationid='' check:fulltext='* Barangay' /&gt;" Guid="8c6e2927-5dfa-4499-98b7-ba4319ba0160" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Street Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="TEST" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="c93655fe-d0c5-45d0-a899-7ae53909a5c1" CvElementArea="1356, 900, 425, 65" CvType="InputBox" DesignTimeRectangle="1359, 903, 421, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter street name' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter street name' role='editable text' automationid='' /&gt;" Guid="989cf890-1240-41f1-a9b1-803575165bbc" InformativeScreenshot="1b2aba2928fdd6f4d8dab08685aa8ca1.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c93655fe-d0c5-45d0-a899-7ae53909a5c1" CvTextArea="1356, 869, 138, 21" CvTextArgument="* Street Name" CvType="Text" DesignTimeRectangle="1359, 865, 134, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Street Name' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Street Name' role='text' automationid='' check:fulltext='* Street Name' /&gt;" Guid="1414f818-4819-4321-a546-948f1d4561ba" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Same with'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="b940fbf6-ef6e-4eff-b578-58dfe5c2ac86" CvElementArea="486, 999, 30, 30" CvType="CheckBox" DesignTimeRectangle="483, 996, 37, 37" DesignTimeScaleFactor="1.5" ElementType="CheckBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' role='check box' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='check box' /&gt;" Guid="24254a41-d10a-449b-ad79-4073cc5e00c5" InformativeScreenshot="9a7c2db9ae50be208dd5a129bba17e33.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b940fbf6-ef6e-4eff-b578-58dfe5c2ac86" CvTextArea="530, 999, 298, 25" CvTextArgument="Same with Present Address" CvType="Text" DesignTimeRectangle="531, 996, 297, 34" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Same with Present Address' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Same with Present Address' role='text' automationid='' check:fulltext='Same with Present Address' /&gt;" Guid="7a4fa2fe-f00d-41ea-8055-0daba010b81d" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="7" Version="V3" />
+            <uix:NGetText DisplayName="Get Text '* Country'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="53a3cedd-6dbe-4768-9926-79e925e17187" CvTextArea="512, 594, 124, 22" CvType="AnyWordGroup" DesignTimeRectangle="483, 574, 421, 61" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='9' role='grouping' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="addba8ef-3e05-4f8c-b8c1-ac0d81a00bf3" InformativeScreenshot="7d10babaebfc859286e88d514c6f14a5.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="53a3cedd-6dbe-4768-9926-79e925e17187" CvTextArea="480, 542, 96, 25" CvTextArgument="* Country" CvType="Text" DesignTimeRectangle="483, 537, 93, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='* Country' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='* Country' role='text' check:fulltext='* Country' /&gt;" Guid="b19820a5-b686-4760-9bf6-967c24ab4236" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">countryText</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">countryText == "PHILIPPINES"</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+            </uta:VerifyExpression>
+            <uix:NGetText DisplayName="Get Text '* State/Province'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="53a3cedd-6dbe-4768-9926-79e925e17187" CvTextArea="950, 594, 170, 22" CvType="AnyWordGroup" DesignTimeRectangle="921, 574, 421, 61" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='10' role='grouping' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="1bc91737-81b1-4c14-b723-73a1cd75761e" InformativeScreenshot="b55b5cddf5d788ed2f114461ade16269.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="53a3cedd-6dbe-4768-9926-79e925e17187" CvTextArea="918, 540, 157, 24" CvTextArgument="* State/Province" CvType="Text" DesignTimeRectangle="921, 537, 154, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='* State/Province' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='* State/Province' role='text' check:fulltext='* State/Province' /&gt;" Guid="885d9a1b-56be-4a4c-a562-f9cb36a5e7c9" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">provinceText</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">provinceText == "CAMARINES SUR"</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+            </uta:VerifyExpression>
+            <uix:NGetText DisplayName="Get Text '* Town/City'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="53a3cedd-6dbe-4768-9926-79e925e17187" CvTextArea="1388, 594, 114, 22" CvType="AnyWordGroup" DesignTimeRectangle="1359, 574, 421, 61" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='11' role='grouping' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="f6858580-1c8d-45bf-80db-cce26119a867" InformativeScreenshot="332fee188cd6a721d8a2819cdc0058c1.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="53a3cedd-6dbe-4768-9926-79e925e17187" CvTextArea="1356, 540, 115, 27" CvTextArgument="* Town/City" CvType="Text" DesignTimeRectangle="1359, 537, 112, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='* Town/City' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='* Town/City' role='text' check:fulltext='* Town/City' /&gt;" Guid="2c01cb32-b54d-4959-a53d-5cd99092217d" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">cityText</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">cityText == "NAGA CITY"</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+            </uta:VerifyExpression>
+            <uix:NGetText DisplayName="Get Text '* Barangay'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="53a3cedd-6dbe-4768-9926-79e925e17187" CvTextArea="510, 747, 81, 22" CvType="AnyWordGroup" DesignTimeRectangle="483, 727, 421, 61" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='12' role='grouping' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="1eb3176b-b9b1-48e4-a8c6-db26bdfa281a" InformativeScreenshot="182ffd711084fa3eefcfc5cb748fe02e.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="53a3cedd-6dbe-4768-9926-79e925e17187" CvTextArea="480, 695, 108, 25" CvTextArgument="* Barangay" CvType="Text" DesignTimeRectangle="483, 690, 105, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='* Barangay' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='* Barangay' role='text' check:fulltext='* Barangay' /&gt;" Guid="d4296efc-a49c-47ca-a65e-0c0fe73dcfbe" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">barangayText</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_4" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">barangayText == "ABELLA"</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+            </uta:VerifyExpression>
+            <uix:NGetText DisplayName="Get Text '* Street Name'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="e0ae8edd-435d-46fb-af33-534d4a73038e" CvElementArea="1356, 725, 425, 64" CvType="InputBox" DesignTimeRectangle="1359, 727, 421, 61" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='48' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='text' /&gt;" Guid="698eb900-6688-4358-bc37-0233d39b0c5e" InformativeScreenshot="fb5784b14c11c15e052787cf64c52650.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="e0ae8edd-435d-46fb-af33-534d4a73038e" CvTextArea="1356, 695, 138, 19" CvTextArgument="* Street Name" CvType="Text" DesignTimeRectangle="1359, 690, 134, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='* Street Name' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='* Street Name' role='text' check:fulltext='* Street Name' /&gt;" Guid="33ef0a61-7a6d-4d71-914a-7d5ffd7ae4bf" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">streetName</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_5" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">streetName == "TEST"</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+            </uta:VerifyExpression>
+            <uix:NGetText DisplayName="Get Text '* Postal Code'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="e84b1bd1-8691-4325-b823-4d52ee78b4a7" CvElementArea="1356, 878, 426, 64" CvType="InputBox" DesignTimeRectangle="1359, 880, 421, 61" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='56' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='text' /&gt;" Guid="425103c2-dc2a-43ec-b8d5-3d2d1a2beff0" InformativeScreenshot="116853912506ccaefd38f70afd5a26d3.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="e84b1bd1-8691-4325-b823-4d52ee78b4a7" CvTextArea="1356, 846, 132, 21" CvTextArgument="* Postal Code" CvType="Text" DesignTimeRectangle="1359, 843, 128, 29" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='* Postal Code' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='* Postal Code' role='text' check:fulltext='* Postal Code' /&gt;" Guid="c79b7e46-ee15-4b41-9f7a-1944ee84e1b7" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">postalCode</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="416,115.2" sap2010:WorkflowViewState.IdRef="VerifyExpression_6" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">postalCode == "4400"</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+            </uta:VerifyExpression>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" FilePath="D:\\Syncpoint\\appsyncpoint.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVtSURBVGhD7ZlJT1tXAIVvVbWLtqrURdUfULWLrvsTmhaMzRjmeQyJaKoQAnECIS4YG4PxhPH4PNsYB5NQOkhV0zaLdh911UiRukpSKcwQMuCc6j6w/XjPSbgvbQMSVzoLbOP3fcfH9sKEHJ2jc3QO/7k8pOvSDOtxGKLuH+wmhLxJCHktI0Dv+OPPv15ZOtUWPvv5m7ISQj7YlTgYAizZFfiYEPKORODXX34+0BEIfEIIeVci8PRp6kDnlQikUk9BTyqVwvb29nNDj/j/hXklAv9m9i3w3fc38NP1my8d+jxCgFu3bj03wse26hf2hEmAXvyz7hCOnQ3iWE8Qn/cG8EWfH3lqP/Iu+pE/4INikEOBxgvlkBeqYQ9UI24U6l0oMjhRbHSgxDTFP8/dO3ckTe4nQvh24zy7QH5fBIrzESjUYRRcDEE5EIRqMAiVJoDCIT+KtD4U6ziU6L0oNXhQNu7G8QkXys1OVFgdqJx0SATEjYuTS4DCn7Qn2QWKB2IoHoyhRBNFqSaCsqEwjmvDKNeFUD4aRMVYAJVGP6pMflRbfKi2caixe1E75UGd0416t0siwBIhfJc3wS5QORRHlTaOKt00qvUx1BiiqB2Pom4iijpTBPWWMBpsITTag2hyBNDs8qPF40MLx6HVx6HN75UIiBsXRygghD8djLMLNBgSaBxPoNE4gybTDJotcTTbptEyGUPrVBRtzgjaXRF0eMI4wYV4+FZuB7w96MGpCCcRYIkQ/sx09MUC13+/uUeg3ZxEhzWJDtssOuxXcMKRQKdrBp3uON96tdWLUpMDSqMVygkzVGYTCq0TKJo0otg+jhLHmERA3Lg4QgEhfM9siL+NMu5boMtxFV3OOXzpnsNpTxKn3AnUmANQ6qegGLWhYMwKpdECpckMlUUAP7UDX+oySARYIoTvvRZgF+jm5nHWP4+vuCQqJ3zI004iX2eDYtSKgjELlEYzVCYTCi0TKLLttj41hhKnAaWuUZR59BIBcePiCAWE8OoFjl1AHf4WJ90JKEYcyBuZRL7eBoXBioJxyzMnU+o0oMw9iuMePco5nUSAJUL4/h9c7AKdzhnkDduRPzK578nw8F4dyrkRVPi1EgFx4+IIBYTwl360swvImQyFr/CNoNKvRVVwSCLAEiH88A0zu4CcyVT4tKgMDPPw1WGNREDcuDhCASG87rcxdgE5k+HhQ1+jJqxBbfSyRIAlQnhZAnImU03hIxR+EHXTl15KQAgvS0DOZGoil1EbG0T99AAaZvozAqnUNp/t7Sd8njx5zOfx40d8Hj16iIcPabawtbWFBw82sbm5iY2NDayvr2NtbY1dQM5k6mKXUB/fgW9MXMgIpMFv37793GxtPeDBNzc3sLGxjvX1NaytrWJ1dZVdQM5k6uP9aJi5iKYrF9A8ez4j8KLGKfhO6xQ82zoFX1lZwcrKMruAnMk0Jii8modvmevLCKTBxY2Ls7d1Cr6C5eVlLC0tsQvImUzTrBrNSQrfi9ar5zICz25cOBdp62n4paVFdgE5k2lJ9qF1rhdt186hfb4nI5AGFzcujrD15WUKvoTFxUU+zAJyJkNbb7vWg/b5s+j4pjsjIG08u/P0mzQLnm49C3///n12ATmTEcKfWDiTEUiDixsXRwyehmcWiMW+4S/+spmOL/AC6cZ33qA7O881F7p1MbgsARp6Ydbcu3sXf9+7J7mdCmTnIgTPPZdcYRZgTfobln7ipL9Ns1vP7nzvp0vuueTKfy7wf+SFAochOQW6e84fo3cchhBCPiWEfEgIeSsjQAh5gxDyPiHko127gxwK/x4h5HWhAP3BjEq8vfvSHOTQ5vfAH52jc3QO8fkHTZVDqxUpEq0AAAAASUVORK5CYII=" InformativeScreenshot="75ca222980995a2d4addbaf56c04182f.png" Selector="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" Title="Syncpoint" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
