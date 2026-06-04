@@ -1022,111 +1022,6 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "1c6a8a44-5d9b-44eb-b827-a5216e1cc6bf",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC01_AccessAMLRiskProfilerUI.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "0d0cb8ee-b70c-4c67-b56d-fcb49a4b0e46",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC02_SubmitAMLQuestionnaireResponses.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "1adc6f4f-98ab-4951-9df1-84dd568bfebd",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC03_AutoSelectResponsesFromCISData.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "73a054ec-5f69-4a02-95db-7e49bb5ddd40",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC04_SaveCompletedRiskProfiler.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "60ff162c-5605-4d8e-876c-a48d620d3721",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC05_AutoAssignRiskRating.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "9e9e4361-4cea-4122-8709-4f03b313138d",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC06_ProvideAdditionalInput.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "9090f83a-f25e-4c5b-95cf-bc81a0018ad5",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC07_ClearAllResponses.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "b6c8b38d-3062-4e24-99dc-fc55d256d121",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC08_LogAMLRiskProfilerActivities.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "b56a0814-65bd-4d16-a346-e8f1c20f217f",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC09_RequireAMLProfilerForBasicKYC.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "7252f241-2f62-4b57-b1bf-7f823e9deff1",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC10_AdditionalInputsFormat.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "69c9be78-7999-4ffc-be91-b5929cac1907",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC11_AMLEDDBackgroundDisplay.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "daac7a83-2a4a-4f53-b8c4-3779eb897ba4",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC12_Q5Q6SingleSelectionOnly.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "6e006d9b-f4bc-429d-aa75-cfe1370577a0",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC13_AnswersPersistOnRevisit.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "e0c73690-49d2-4361-b023-9376e2c80e64",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC14_CorrectAMLLabelNotAMLA.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "1bb753e8-aff3-4117-86bb-f062fede7c13",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\AMLRiskProfiler\\TC15_UIUXDesignCompliance.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "9691cc77-5c47-41c1-b7e7-d8c34655df9f",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
@@ -1600,6 +1495,111 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC14_NonBlacklistedNotBlocked.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1c6a8a44-5d9b-44eb-b827-a5216e1cc6bf",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC01_AccessAMLRiskProfilerUI.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0d0cb8ee-b70c-4c67-b56d-fcb49a4b0e46",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC02_SubmitAMLQuestionnaireResponses.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1adc6f4f-98ab-4951-9df1-84dd568bfebd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC03_AutoSelectResponsesFromCISData.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "73a054ec-5f69-4a02-95db-7e49bb5ddd40",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC04_SaveCompletedRiskProfiler.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "60ff162c-5605-4d8e-876c-a48d620d3721",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC05_AutoAssignRiskRating.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9e9e4361-4cea-4122-8709-4f03b313138d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC06_ProvideAdditionalInput.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9090f83a-f25e-4c5b-95cf-bc81a0018ad5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC07_ClearAllResponses.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b6c8b38d-3062-4e24-99dc-fc55d256d121",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC08_LogAMLRiskProfilerActivities.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b56a0814-65bd-4d16-a346-e8f1c20f217f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC09_RequireAMLProfilerForBasicKYC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7252f241-2f62-4b57-b1bf-7f823e9deff1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC10_AdditionalInputsFormat.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "69c9be78-7999-4ffc-be91-b5929cac1907",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC11_AMLEDDBackgroundDisplay.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "daac7a83-2a4a-4f53-b8c4-3779eb897ba4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC12_Q5Q6SingleSelectionOnly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6e006d9b-f4bc-429d-aa75-cfe1370577a0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC13_AnswersPersistOnRevisit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e0c73690-49d2-4361-b023-9376e2c80e64",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC14_CorrectAMLLabelNotAMLA.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1bb753e8-aff3-4117-86bb-f062fede7c13",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\AMLRiskProfiler\\TC15_UIUXDesignCompliance.xaml"
       }
     ],
     "saveToCloud": false
