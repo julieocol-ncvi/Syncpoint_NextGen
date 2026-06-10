@@ -28,14 +28,12 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>UiPath.UIAutomationNext.Activities</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>System.Activities.Statements</x:String>
-      <x:String>System.ComponentModel</x:String>
-      <x:String>UiPath.Testing.Activities</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -72,56 +70,56 @@
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="617.3333333333333,1998" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="854.8000000000001,1744" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="484,1975.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="483.2,1720.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1655.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1406.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_FirstName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_FirstName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="416,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">in_FirstName</CSharpReference>
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_MiddleName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_MiddleName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="416,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">in_MiddleName</CSharpReference>
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_LastName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_LastName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="416,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">in_LastName</CSharpReference>
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="72ac97c3-5244-446c-a853-6088ce20d381" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="874, 907, 172, 36" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_24.Button_QMLTYPE_6' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_24.Button_QMLTYPE_6.Label_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_24.Button_QMLTYPE_6' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_24.Button_QMLTYPE_6.Label_*' role='text' check:text='Yes, I Understand' /&gt;" Guid="1fd558e7-b031-43eb-b989-a0ca535695f9" InformativeScreenshot="645994eb9d9991f23f6093df9b629642.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindow' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -142,7 +140,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="searchCustomer - Invoke Workflow File (Reusable\searchCustomer.xaml)" sap:VirtualizedContainerService.HintSize="416,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable\searchCustomer.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="searchCustomer - Invoke Workflow File (Reusable\searchCustomer.xaml)" sap:VirtualizedContainerService.HintSize="416,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable\searchCustomer.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_MiddleName">
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">in_MiddleName</CSharpValue>
@@ -155,7 +153,7 @@
                 </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="9f011e3d-a305-4e47-ac50-50c1bd16837e" CvElementArea="1352, 958, 252, 66" CvTextArea="1449, 980, 57, 22" CvTextArgument="Close" CvType="Button" DesignTimeRectangle="1356, 961, 245, 61" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='Close' role='push button' check:fulltext='Close' /&gt;" Guid="90eb4ead-4116-4a4b-ba94-15411ecc0b78" InformativeScreenshot="f5f036a7341e9181c0bd451a9bc80b18.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -170,28 +168,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply for'" sap:VirtualizedContainerService.HintSize="416,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V3">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="2ba8d695-a8df-4c02-9410-38f44a03e2b5" CvElementArea="492, 814, 479, 75" CvTextArea="567, 839, 326, 30" CvTextArgument="Apply for a 24k Physical Card" CvType="Button" DesignTimeRectangle="494, 816, 475, 73" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Apply for a 24k Physical Card' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Apply for a 24k Physical Card' role='push button' automationid='' check:fulltext='Apply for a 24k Physical Card' /&gt;" Guid="24ea63c5-1887-4bc7-b87e-6f0deaa55e69" InformativeScreenshot="12b0cc00621adb7be3721abb9af19d44.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target CVScreenId="2ba8d695-a8df-4c02-9410-38f44a03e2b5" CvTextArea="492, 716, 156, 24" CvTextArgument="Card Number:" CvType="Text" DesignTimeRectangle="494, 711, 154, 34" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Card Number:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Card Number:' role='text' automationid='' check:fulltext='Card Number:' /&gt;" Guid="4fefa209-cc46-4fa2-82af-dc4dc2f4c447" SearchSteps="Selector, FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="416,161.6" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

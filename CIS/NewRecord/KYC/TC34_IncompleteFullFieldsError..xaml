@@ -32,6 +32,7 @@
       <x:String>UiPath.Shared.ObjectLibrary</x:String>
       <x:String>UiPath.CV.Activities</x:String>
       <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -83,25 +84,28 @@
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="710.8000000000001,11616" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,11676" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="errorMessage" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="552,11592.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,11652.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518.4,11278.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="985.6,11338.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="8502bf37-f6ae-4d39-85c9-f0e66b0c2177" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="874, 907, 172, 36" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6.Label_Q*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_5.Button_QMLTYPE_6.Label_Q*' role='text' check:text='Yes, I Understand' /&gt;" Guid="79c00e44-9820-4e82-bbbe-d865166ac08a" InformativeScreenshot="b876919d02a40c923917a649488e0250.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindow' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -122,18 +126,18 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NewRecord - Invoke Workflow File (Reusable\NewRecord.xaml)" sap:VirtualizedContainerService.HintSize="484.8,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable\NewRecord.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NewRecord - Invoke Workflow File (Reusable\NewRecord.xaml)" sap:VirtualizedContainerService.HintSize="952,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable\NewRecord.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GenerateRecord - Invoke Workflow File (Reusable\GenerateRecord.xaml)" sap:VirtualizedContainerService.HintSize="484.8,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Reusable\GenerateRecord.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GenerateRecord - Invoke Workflow File (Reusable\GenerateRecord.xaml)" sap:VirtualizedContainerService.HintSize="952,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Reusable\GenerateRecord.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="484.8,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_8" InteractionMode="HardwareEvents" MovementUnits="17" Version="V3" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,448" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_8" InteractionMode="HardwareEvents" MovementUnits="17" Version="V3" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="952,448" sap2010:WorkflowViewState.IdRef="CommentOut_2">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,337.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
@@ -165,7 +169,7 @@
                 </Sequence>
               </ui:CommentOut.Body>
             </ui:CommentOut>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Male'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Male'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="cc13b172-7590-4e6c-b65e-336a13b7a963" CvElementArea="490, 922, 34, 34" CvType="RadioButton" DesignTimeRectangle="483, 916, 49, 48" DesignTimeScaleFactor="1.5" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl role='radio button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl role='radio button' automationid='' /&gt;" Guid="e1fa6e2c-100c-4afc-9cb9-f2cea0f0e0d2" InformativeScreenshot="dd693c4dd8dbca1ba45f11217544d5b2.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -186,7 +190,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Place of Birth'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="PHILIPPINES" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Place of Birth'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="PHILIPPINES" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="cc13b172-7590-4e6c-b65e-336a13b7a963" CvElementArea="1355, 913, 424, 64" CvType="InputBox" DesignTimeRectangle="1358, 916, 420, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select place of birth' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select place of birth' role='editable text' automationid='' /&gt;" Guid="987e440e-f322-4ac4-aa69-13e4e1853f2c" InformativeScreenshot="00b2ff39c9e6b732505d063c43aa96ff.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -207,7 +211,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PHILIPPINES'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PHILIPPINES'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="08a5ddba-6d88-4f70-9320-c83a034bba14" CvElementArea="1355, 850, 425, 63" CvTextArea="1380, 869, 138, 24" CvTextArgument="PHILIPPINES" CvType="Button" DesignTimeRectangle="1358, 853, 420, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='PHILIPPINES' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='PHILIPPINES' role='text' automationid='' check:fulltext='PHILIPPINES' /&gt;" Guid="c234f987-02a1-4f19-b563-32d34e83809e" InformativeScreenshot="cd38b0a8b9aa722273e12d121ac79bab.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -222,7 +226,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Select state/province'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="ABRA" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Select state/province'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="ABRA" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="025d455e-962e-4e74-aa7d-6800a932b65a" CvElementArea="1355, 554, 424, 63" CvType="InputBox" DesignTimeRectangle="1358, 556, 420, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select state/province' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select state/province' role='editable text' automationid='' /&gt;" Guid="ff7779e3-e656-425c-a107-bb59f0669cae" InformativeScreenshot="1bd69a865e80cfad08ca3b19163a134d.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NTypeInto.Target>
@@ -237,7 +241,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ABRA'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ABRA'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="5fb1dda9-6b6e-42b1-91c4-0d64acfe150d" CvTextArea="1379, 639, 66, 22" CvTextArgument="ABRA" CvType="Text" DesignTimeRectangle="1358, 622, 420, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ABRA' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ABRA' role='text' automationid='' check:fulltext='ABRA' /&gt;" Guid="c6f70a85-8a0a-4065-ab56-126fd6ff700f" InformativeScreenshot="490c221be05bd67d56b497e37c1fbfdf.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -252,7 +256,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Nationality'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="FILIPINO" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Nationality'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="FILIPINO" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="3e38bb23-bebd-40da-8d81-2398506fa533" CvElementArea="481, 468, 424, 64" CvType="InputBox" DesignTimeRectangle="483, 470, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select nationality' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select nationality' role='editable text' automationid='' /&gt;" Guid="5cb07bd2-b3e5-4b99-9029-afdf85466704" InformativeScreenshot="3f8e1a954ab792db36b54e8a1a7f6023.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -273,11 +277,11 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FILIPINO'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FILIPINO'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="07d8363c-3103-4fb6-be92-e593060864b6" CvElementArea="399, 837, 356, 53" CvType="InputBox" DesignTimeRectangle="402, 839, 351, 49" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='FILIPINO' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='FILIPINO' role='text' automationid='' check:fulltext='FILIPINO' /&gt;" Guid="b951cfa6-3485-4eb4-9527-96237b1d425a" InformativeScreenshot="b48f90ada83acb9257aec50af70bb344.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="07d8363c-3103-4fb6-be92-e593060864b6" CvElementArea="399, 837, 356, 53" CvType="InputBox" DesignTimeRectangle="402, 861, 101, 24" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Nationality' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Nationality' role='text' automationid='' check:fulltext='* Nationality' /&gt;" Guid="6bf380e3-24a6-4596-9ca4-34129794791f" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -294,8 +298,8 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="484.8,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_9" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Country'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="PHILIPPINES" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_9" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Country'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="PHILIPPINES" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="1fd487eb-61b7-4262-ad9e-9d3e6445e316" CvElementArea="481, 748, 423, 64" CvType="InputBox" DesignTimeRectangle="483, 749, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select country' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select country' role='editable text' automationid='' /&gt;" Guid="b31c7c91-958e-435f-8e07-f17c2107057c" InformativeScreenshot="eca09e24763a414b9fff8e50ddf08d85.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -316,7 +320,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PHILIPPINES'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PHILIPPINES'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="b61b03e3-733d-4a32-b222-75483d6419cb" CvTextArea="506, 833, 138, 24" CvTextArgument="PHILIPPINES" CvType="Text" DesignTimeRectangle="483, 816, 421, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='PHILIPPINES' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='PHILIPPINES' role='text' automationid='' check:fulltext='PHILIPPINES' /&gt;" Guid="f496642c-3d34-468c-aab4-d6cf64e90b21" InformativeScreenshot="6a65056bd9dcccdef79e409b68a87085.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -331,7 +335,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* State/Province'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="CAMARINES SUR" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* State/Province'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="CAMARINES SUR" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="f465c45a-1a9a-42dc-b36b-353fedd8139f" CvElementArea="919, 748, 423, 63" CvType="InputBox" DesignTimeRectangle="921, 749, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select state/province' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select state/province' role='editable text' automationid='' /&gt;" Guid="826b457a-519d-4317-acfd-444f6a6351f1" InformativeScreenshot="87e8f2ff318bc7edd0c28a5982adff1e.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -352,7 +356,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CAMARINES SUR'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CAMARINES SUR'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="7506ae2f-fdda-4183-b655-14a63718a909" CvTextArea="944, 833, 189, 24" CvTextArgument="CAMARINES SUR" CvType="Text" DesignTimeRectangle="921, 816, 421, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='CAMARINES SUR' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='CAMARINES SUR' role='text' automationid='' check:fulltext='CAMARINES SUR' /&gt;" Guid="04f65d7c-6882-48df-9ed3-8e43de2a4f1e" InformativeScreenshot="0cde17d66e4279516cb8fd1ae6f004f4.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -367,7 +371,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Town/City'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="NAGA CITY" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Town/City'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="NAGA CITY" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="dbcb900e-aed7-43b6-997d-7597e770e29e" CvElementArea="1357, 748, 424, 64" CvType="InputBox" DesignTimeRectangle="1359, 749, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select town/city' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select town/city' role='editable text' automationid='' /&gt;" Guid="43753d1e-ad69-46da-827d-28cfeb266ca3" InformativeScreenshot="928bfa0308d4de6f7efc4a4b23b973dc.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -388,7 +392,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NAGA CITY'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NAGA CITY'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="5dd0ee05-efc5-4d94-83c9-5369648d36f3" CvTextArea="1382, 833, 125, 24" CvTextArgument="NAGA CITY" CvType="Text" DesignTimeRectangle="1359, 816, 421, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='NAGA CITY' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='NAGA CITY' role='text' automationid='' check:fulltext='NAGA CITY' /&gt;" Guid="1e9e1f08-b157-456a-a24f-7830d6bc5594" InformativeScreenshot="d027293980e4ebb87902f373b01bab20.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -403,7 +407,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Barangay'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="ABELLA" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Barangay'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="ABELLA" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="1fbd32ea-9fb3-4b80-a6d2-424757861951" CvElementArea="481, 900, 425, 64" CvType="InputBox" DesignTimeRectangle="483, 903, 421, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select barangay' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select barangay' role='editable text' automationid='' /&gt;" Guid="89774aed-2d70-475b-bce4-8de62e41368c" InformativeScreenshot="fcd060b71604671147e24b7695e8f0b6.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -424,7 +428,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ABELLA'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ABELLA'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="3d2e33c9-9de6-4889-8b6d-91906bb97a55" CvElementArea="479, 836, 429, 63" CvType="InputBox" DesignTimeRectangle="483, 840, 421, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ABELLA' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ABELLA' role='text' automationid='' check:fulltext='ABELLA' /&gt;" Guid="8d12ea65-4e42-4c4d-b4a9-af6a08506432" InformativeScreenshot="f54c5fbf6e1cdaa65a86e28f22569217.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -445,7 +449,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Street Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="TEST" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Street Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="TEST" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="c93655fe-d0c5-45d0-a899-7ae53909a5c1" CvElementArea="1356, 900, 425, 65" CvType="InputBox" DesignTimeRectangle="1359, 903, 421, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter street name' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter street name' role='editable text' automationid='' /&gt;" Guid="989cf890-1240-41f1-a9b1-803575165bbc" InformativeScreenshot="1b2aba2928fdd6f4d8dab08685aa8ca1.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -466,7 +470,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="03f16e8b-b433-4b24-98ad-60faba66ed47" DisplayName="CV Screen Scope 'grouping'" sap:VirtualizedContainerService.HintSize="484.8,559.2" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="03f16e8b-b433-4b24-98ad-60faba66ed47" DisplayName="CV Screen Scope 'grouping'" sap:VirtualizedContainerService.HintSize="952,559.2" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
               <p:CVScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -510,6 +514,9 @@
                   </Sequence>
                 </ActivityAction>
               </p:CVScope.Body>
+              <p:CVScope.DesignTimeCache>
+                <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+              </p:CVScope.DesignTimeCache>
               <p:CVScope.DesignTimeCacheContainer>
                 <uc:CvCacheContainer>
                   <uc:CvCacheContainer.Caches>
@@ -831,7 +838,7 @@
                 <InArgument x:TypeArguments="x:Boolean" />
               </p:CVScope.UseLocalServer>
             </p:CVScope>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,387.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="952,387.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,276.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
@@ -843,7 +850,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable CVScreenId="929262c7-f58a-4b24-bdb1-b1e15163d4d6" CvElementArea="404, 734, 26, 25" CvType="CheckBox" DesignTimeRectangle="402, 732, 31, 31" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' role='check box' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='check box' /&gt;" Guid="477992c0-e455-4821-ac51-4782116ef410" InformativeScreenshot="bbaa4ef25f1040a15f9c7316a192b8a9.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="929262c7-f58a-4b24-bdb1-b1e15163d4d6" CvTextArea="401, 312, 152, 18" CvTextArgument="Present Address" CvType="Text" DesignTimeRectangle="402, 316, 152, 20" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Present Address' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Present Address' role='text' automationid='' check:fulltext='Present Address' /&gt;" Guid="e759090f-7759-4bea-be33-a0d13cc3b172" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -863,8 +870,8 @@
                 </Sequence>
               </ui:CommentOut.Body>
             </ui:CommentOut>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="484.8,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Salary/Wage/Commission'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Salary/Wage/Commission'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="f9307fde-3585-4ba7-bbd9-f720b6031bcf" CvElementArea="486, 766, 30, 30" CvType="CheckBox" DesignTimeRectangle="483, 763, 37, 37" DesignTimeScaleFactor="1.5" ElementType="CheckBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='4' role='check box' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='check box' /&gt;" Guid="aba728a9-6590-4446-aa8a-cb01e6dcd995" InformativeScreenshot="43e66a531e90b831f2ad8420afdeccd2.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -885,8 +892,8 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="484.8,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="3" Version="V3" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Employed'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="3" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Employed'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="61b790d8-6342-4f79-b501-9d068edd390f" CvElementArea="490, 751, 34, 34" CvType="RadioButton" DesignTimeRectangle="483, 744, 49, 49" DesignTimeScaleFactor="1.5" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='3' role='radio button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='radio button' /&gt;" Guid="805cf9f0-7c1c-41e1-833d-3b4c2bf6aac6" InformativeScreenshot="5d34cc11baab9bf371dfaed2e78eb054.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -907,7 +914,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Name of Employer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="TEST" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Name of Employer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="TEST" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="f5fea70e-729d-4233-9017-9c7a74b00925" CvElementArea="481, 484, 424, 64" CvType="InputBox" DesignTimeRectangle="483, 486, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter name of employer' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter name of employer' role='editable text' automationid='' /&gt;" Guid="484ca16c-f903-4272-8dd1-3cd39a1b405a" InformativeScreenshot="cfdfe80e72e4611753307abc6ed5fbaf.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -928,7 +935,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Nature of Work'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="ADMINISTRATIVE" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* Nature of Work'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="ADMINISTRATIVE" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="f5fea70e-729d-4233-9017-9c7a74b00925" CvElementArea="919, 485, 425, 63" CvType="InputBox" DesignTimeRectangle="921, 486, 421, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select nature of work' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select nature of work' role='editable text' automationid='' /&gt;" Guid="5b7b8198-d656-4234-b249-cc9658a0aa86" InformativeScreenshot="71a8127cef19e316896db23814968a02.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -949,7 +956,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ADMINISTRATIVE /'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ADMINISTRATIVE /'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="89b9d385-aef6-4cc6-b479-d14200f0a58e" CvElementArea="919, 550, 426, 63" CvTextArea="942, 569, 322, 25" CvTextArgument="ADMINISTRATIVE / CLERICAL" CvType="Button" DesignTimeRectangle="921, 552, 421, 58" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ADMINISTRATIVE / CLERICAL' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ADMINISTRATIVE / CLERICAL' role='text' automationid='' check:fulltext='ADMINISTRATIVE / CLERICAL' /&gt;" Guid="aac68b25-9bf3-4f29-a14a-22c074eba45c" InformativeScreenshot="738af01889aaaa4de93e4af9fbcf4dd8.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -964,8 +971,8 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="484.8,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_5" InteractionMode="HardwareEvents" MovementUnits="7" Version="V3" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* ID Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="COMPANY ID" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_5" InteractionMode="HardwareEvents" MovementUnits="7" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* ID Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="COMPANY ID" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="10a3627f-5084-406e-907c-91d3c273e75f" CvElementArea="656, 772, 424, 63" CvType="InputBox" DesignTimeRectangle="659, 774, 420, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select ID type' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Select ID type' role='editable text' automationid='' /&gt;" Guid="4c61765f-1f9d-44ce-8df5-348a438c0b29" InformativeScreenshot="6b8b4cbb96df3de1579c37d45ee84c3a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -986,7 +993,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'COMPANY ID'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'COMPANY ID'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="8c17a19b-9edd-4f1f-bda0-b8c319e0d9b3" CvElementArea="655, 709, 426, 62" CvType="InputBox" DesignTimeRectangle="659, 711, 420, 58" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='COMPANY ID' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='COMPANY ID' role='text' automationid='' check:fulltext='COMPANY ID' /&gt;" Guid="9f0d5c30-58d8-4c17-b984-73687d848b8b" InformativeScreenshot="deca1a8ce0ba13d151618a789f89edad.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -1001,11 +1008,11 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* ID Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="1233455322" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* ID Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="1233455322" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="b8559de0-4c09-4346-8735-384ffbb6f05b" CvElementArea="911, 679, 355, 53" CvType="InputBox" DesignTimeRectangle="914, 681, 350, 51" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter ID number' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter ID number' role='editable text' automationid='' /&gt;" Guid="e723ba9a-1550-4b83-abad-4aafa0d8dab3" InformativeScreenshot="d7b5d70991a8838742aba726b44d1604.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="b8559de0-4c09-4346-8735-384ffbb6f05b" CvTextArea="911, 652, 104, 17" CvTextArgument="* ID Number" CvType="Text" DesignTimeRectangle="914, 650, 101, 25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* ID Number' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* ID Number' role='text' automationid='' check:fulltext='* ID Number' /&gt;" Guid="e9fb4697-3a42-4b3c-bf43-b16ce67c0f31" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -1022,7 +1029,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Expiration Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="06/21/2027" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Expiration Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Text="06/21/2027" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="644ff2ae-36dc-45e3-b97c-1a449dee7903" CvTextArea="1556, 645, 142, 22" CvTextArgument="MM/DD/YYYY" CvType="Text" DesignTimeRectangle="1535, 626, 300, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='MM/DD/YYYY' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='MM/DD/YYYY' role='editable text' /&gt;" Guid="4361c7fb-4b1e-49ba-8171-bbfd59eeb8a7" InformativeScreenshot="ff0056dea419fbae5abc0e621f1dee37.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -1043,8 +1050,8 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="484.8,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_6" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Online AML Risk Profiler'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_6" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Online AML Risk Profiler'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="e06ebe9c-dfd6-433d-bcc5-e8f4b113e55b" CvElementArea="916, 500, 363, 64" CvTextArea="978, 521, 240, 22" CvTextArgument="Online AML Risk Profiler" CvType="Button" DesignTimeRectangle="921, 502, 355, 61" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Online AML Risk Profiler' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Online AML Risk Profiler' role='push button' automationid='' check:fulltext='Online AML Risk Profiler' /&gt;" Guid="80af09e6-faad-4d14-94b5-f83db5dd3bbc" InformativeScreenshot="d0dab7a4911e4c255d8f2f920d14d3d5.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -1059,7 +1066,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="9bc1f6ef-0e00-4a65-aa45-d62eaaf232c9" CvElementArea="1647, 1053, 250, 63" CvTextArea="1734, 1073, 75, 22" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1650, 1054, 245, 61" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Submit' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Submit' role='push button' automationid='' check:fulltext='Submit' /&gt;" Guid="c0537029-bc9d-41f1-9e9f-aefdc73510cf" InformativeScreenshot="c223e9698c6f2e9170923fb8131b813c.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -1074,7 +1081,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, proceed'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, proceed'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="7537f156-034f-4306-9054-8d031f87eb84" CvElementArea="1190, 901, 251, 65" CvTextArea="1242, 921, 143, 30" CvTextArgument="Yes, proceed" CvType="Button" DesignTimeRectangle="1193, 904, 245, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Yes, proceed' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Yes, proceed' role='push button' automationid='' check:fulltext='Yes, proceed' /&gt;" Guid="8b080bb1-54e8-4eaf-b655-0460c024c92d" InformativeScreenshot="3a885837e438a921b8ba3aba5d9ae142.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -1089,8 +1096,8 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="484.8,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_7" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '** The'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_7" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '** The'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="3de73e09-a985-49dd-9107-f174079f7f66" CvElementArea="486, 720, 30, 30" CvType="CheckBox" DesignTimeRectangle="483, 718, 37, 36" DesignTimeScaleFactor="1.5" ElementType="CheckBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='15' role='check box' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' role='check box' /&gt;" Guid="abc2e883-f070-4204-9aac-bb848957f657" InformativeScreenshot="1634a2a2bcdb0eac059435e575a0c9f5.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -1111,7 +1118,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="e466b2a0-a475-49c0-bdc9-c9d771d705d5" CvElementArea="1647, 1058, 251, 65" CvTextArea="1730, 1079, 84, 24" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1650, 1060, 245, 61" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Submit' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Submit' role='push button' automationid='' check:fulltext='Submit' /&gt;" Guid="0578e7a4-5d6d-4309-a52f-feeea57d9010" InformativeScreenshot="b344a0282623df2410f18c52132bb0fc.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -1126,36 +1133,47 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed Saving'" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="61ef9914-8d93-4514-85df-01734128b57d" CvElementArea="1190, 897, 245, 71" CvTextArea="1238, 921, 150, 27" CvTextArgument="Proceed Saving" CvType="Button" DesignTimeRectangle="1193, 899, 240, 67" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Proceed Saving' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Proceed Saving' role='push button' automationid='' check:fulltext='Proceed Saving' /&gt;" Guid="903ce671-fa91-4208-8707-cf5692865cca" InformativeScreenshot="6e0ebd885cb224b9a2624b6b8aafbb9b.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No, Complete Full KYC'" sap:VirtualizedContainerService.HintSize="484.8,218.4" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="41abe656-f453-4ac7-b0b4-f1912e38fffb" CvElementArea="851, 954, 320, 69" CvTextArea="900, 977, 222, 25" CvTextArgument="No, Complete Full KYC" CvType="Button" DesignTimeRectangle="854, 955, 315, 67" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='No, Complete Full KYC' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='No, Complete Full KYC' role='push button' automationid='' check:fulltext='No, Complete Full KYC' /&gt;" Guid="44026f04-7b2d-47d5-bba1-86aa85045e57" InformativeScreenshot="e2568b25faf69f092b5d656822f9878e.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Please enter'" sap:VirtualizedContainerService.HintSize="952,504" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,260.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyTrue - Invoke Workflow File (Reusable\verifyTrue.xaml)" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Reusable\verifyTrue.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="outputOfVerification">Full KYC error message is visible</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="titleOfVerification">Searching for Full KYC error message</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,260.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyFalse - Invoke Workflow File (Reusable\verifyFalse.xaml)" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Reusable\verifyFalse.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="outputOfVerification">Full KYC error message is not visible</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="titleOfVerification">Searching for Full KYC error message</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="767, 463, 351, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Please enter the middle name or tick &amp;quot;No Middle Name&amp;quot;' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Please enter the middle name or tick &amp;quot;No Middle Name&amp;quot;' role='text' automationid='' check:fulltext='Please enter the middle name or tick &amp;quot;No Middle Name&amp;quot;' /&gt;" Guid="4af1e4ef-4eb4-433b-82a6-307b70e26abd" InformativeScreenshot="2afcea429ea7e4233271fc54c8f57cbe.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="304ff071-4d02-4e86-96e5-f01c9a283992" CvTextArea="765, 375, 124, 17" CvTextArgument="* Middle Name" CvType="Text" DesignTimeRectangle="767, 372, 122, 24" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Middle Name' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='* Middle Name' role='text' automationid='' check:fulltext='* Middle Name' /&gt;" Guid="bcad5702-8ea5-414d-b7ae-94aaa8fd19de" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

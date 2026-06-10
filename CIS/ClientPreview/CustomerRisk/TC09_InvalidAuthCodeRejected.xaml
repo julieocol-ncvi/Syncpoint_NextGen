@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TC09_AcknowledgmentNoteDisplayed" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TC09_AcknowledgmentNoteDisplayed" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="errorMessage" Type="InArgument(x:String)" />
   </x:Members>
@@ -36,6 +36,10 @@
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>UiPath.Testing.Activities</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -89,21 +93,24 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,2610.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,3191.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,2587.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="e642bbe4-3ad3-4f47-a998-d2eb2d852344" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,3168" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="e642bbe4-3ad3-4f47-a998-d2eb2d852344" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="985.6,2272.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="985.6,2853.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -135,12 +142,12 @@
                 <InArgument x:TypeArguments="x:String" x:Key="in_ClientNumber">993110000005</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '993020000016'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e642bbe4-3ad3-4f47-a998-d2eb2d852344" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '993110000005'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e642bbe4-3ad3-4f47-a998-d2eb2d852344" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="14858ad0-a9d6-42c3-aa1e-7093a699f839" CvTextArea="497, 560, 144, 22" CvTextArgument="993020000016" CvType="Text" DesignTimeRectangle="476, 532, 212, 77" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='993020000016' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='993020000016' role='text' automationid='' check:fulltext='993020000016' /&gt;" Guid="66ec0af2-931b-45a1-b8fa-6576788ccda6" InformativeScreenshot="6579800bbb0be8061fa7f8debaf313c8.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                <uix:TargetAnchorable CVScreenId="4e398fde-3f20-42a5-90b7-d7c1826e9f29" CvTextArea="414, 466, 120, 18" CvTextArgument="993110000005" CvType="Text" DesignTimeRectangle="396, 443, 177, 65" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='993110000005' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='993110000005' role='text' automationid='' check:fulltext='993110000005' /&gt;" Guid="e7d75a62-40c1-4cc5-9a09-558fdb01735f" InformativeScreenshot="d0f57a3df7543c3ae9d777dc0aaaeede.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="14858ad0-a9d6-42c3-aa1e-7093a699f839" CvTextArea="497, 483, 148, 21" CvTextArgument="Client Number" CvType="Text" DesignTimeRectangle="476, 455, 212, 77" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Client Number ▲ ▼' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Client Number ▲ ▼' role='text' automationid='' check:fulltext='Client Number&amp;#xD;&amp;#xA;▲&amp;#xD;&amp;#xA;▼' /&gt;" Guid="a03dadb8-31c6-4788-b137-3b3b1e7b5857" SearchSteps="Selector, FuzzySelector, CV" />
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="4e398fde-3f20-42a5-90b7-d7c1826e9f29" CvTextArea="415, 402, 121, 17" CvTextArgument="Client Number" CvType="Text" DesignTimeRectangle="396, 379, 177, 65" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Client Number ▲ ▼' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Client Number ▲ ▼' role='text' automationid='' check:fulltext='Client Number&amp;#xD;&amp;#xA;▲&amp;#xD;&amp;#xA;▼' /&gt;" Guid="313c4f5a-3a5e-4f36-8c0c-f5eb4273eda4" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
@@ -210,7 +217,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CVScreenId="e353b3a9-e15f-4967-bfdf-486d7c603942" CvElementArea="873, 751, 542, 63" CvType="InputBox" DesignTimeRectangle="874, 753, 540, 61" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter auth code' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Enter auth code' role='editable text' automationid='' /&gt;" Guid="32a42380-4314-4247-a3c2-e4b3515dd5fc" InformativeScreenshot="fbee08c59ad3965ac33731b4d368894f.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="e353b3a9-e15f-4967-bfdf-486d7c603942" CvTextArea="871, 721, 101, 18" CvTextArgument="* Auth Code" CvType="Text" DesignTimeRectangle="871, 721, 101, 18" ElementType="Text" Guid="320b9f5b-32ce-4797-a838-0c9a9c5e1127" SearchSteps="CV" TargetType="ComputerVisionBased" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -242,22 +249,115 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NGetText DisplayName="Get Text '* Auth Code'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e642bbe4-3ad3-4f47-a998-d2eb2d852344" Version="V3">
-              <uix:NGetText.Target>
-                <uix:TargetAnchorable CVScreenId="5a342926-5554-4310-b952-dac6c5e64023" CvTextArea="872, 809, 127, 16" CvType="AnyWordGroup" DesignTimeRectangle="892, 772, 133, 18" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="6e40855b-e734-4b9e-87f3-31d697d776cc" InformativeScreenshot="0304d49b39db2a160c2dc834d1d49ae0.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target CVScreenId="5a342926-5554-4310-b952-dac6c5e64023" CvTextArea="871, 707, 101, 19" CvTextArgument="* Auth Code" CvType="Text" DesignTimeRectangle="871, 721, 101, 18" ElementType="Text" Guid="efff2a77-216d-4b06-9cf3-4d5bcbe21df0" SearchSteps="CV" TargetType="ComputerVisionBased" />
+            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="5c0b127e-474b-4c63-a03a-c46dee162c91" DisplayName="CV Screen Scope 'FLUTTER_RUNNER_WIN32_WI...'" sap:VirtualizedContainerService.HintSize="952,594.4" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+              <p:CVScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <p:CvGetTextWithDescriptor DelayScreenshotAfterScroll="{x:Null}" ScrollOffset="{x:Null}" DesignTimeCacheId="5c0b127e-474b-4c63-a03a-c46dee162c91" DesignTimeScaleFactor="1.25" DisplayName="CV Get Text - Any Word Group" sap:VirtualizedContainerService.HintSize="400,244.8" sap2010:WorkflowViewState.IdRef="CvGetTextWithDescriptor_1" InformativeScreenshot="161eb513ce04c649d86fdbb5601b6c6f" NumberOfScrolls="2" RefreshBefore="True" ScrollDirection="None" Version="V6">
+                      <p:CvGetTextWithDescriptor.Descriptor>
+                        <InArgument x:TypeArguments="uc:CvDescriptor">
+                          <CSharpValue x:TypeArguments="uc:CvDescriptor" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4" xml:space="preserve">"Target: AnyWordGroup (8,96,100,12)" +
+"Anchor: Text '* Auth Code' (8,14,80,14)"</CSharpValue>
+                        </InArgument>
+                      </p:CvGetTextWithDescriptor.Descriptor>
+                      <p:CvGetTextWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor Id="df1f09b7-9173-400f-8f0b-9e8902001e9b">
+                          <uc:CvDescriptor.Anchors>
+                            <x:Array Type="uc:CvElementDescriptor">
+                              <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="8, 14, 80, 14" ElementType="Text" Text="* Auth Code" />
+                            </x:Array>
+                          </uc:CvDescriptor.Anchors>
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="8, 96, 100, 12" ElementType="AnyWordGroup" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvGetTextWithDescriptor.DesignTimeDescriptor>
+                      <p:CvGetTextWithDescriptor.Result>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">errorMessage</CSharpReference>
+                        </OutArgument>
+                      </p:CvGetTextWithDescriptor.Result>
+                    </p:CvGetTextWithDescriptor>
+                  </Sequence>
+                </ActivityAction>
+              </p:CVScope.Body>
+              <p:CVScope.DesignTimeCacheContainer>
+                <uc:CvCacheContainer>
+                  <uc:CvCacheContainer.Caches>
+                    <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                      <uc:CVCache DataSent="False" DisplayName="Screen CV Get Text - '' (Main)" Id="5c0b127e-474b-4c63-a03a-c46dee162c91" InformativeScreenshot="f1692e7c77cc8d10846137143d4ee5f3" LogicalPosition="851, 679" OcrText="* Auth Code 0000 Invalid Auth Code" Position="851, 679" ScaleFactor="1.25" ScreenshotGuid="7a389bb9-858f-46ba-83fe-5f360aab667a" ServerVersion="24.10">
+                        <uc:CVCache.CvAnchorRelations>
+                          <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="4">
+                            <uc:AnchorRelationInfo IsTargetText="False" Target="0">
+                              <uc:AnchorRelationInfo.Anchors>
+                                <x:Array Type="x:Int32">
+                                  <x:Int32>0</x:Int32>
+                                  <x:Int32>1</x:Int32>
+                                  <x:Int32>2</x:Int32>
+                                </x:Array>
+                              </uc:AnchorRelationInfo.Anchors>
+                            </uc:AnchorRelationInfo>
+                          </scg:List>
+                        </uc:CVCache.CvAnchorRelations>
+                        <uc:CVCache.CvUiElements>
+                          <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="4">
+                            <uc:CvElementInfo Category="InputBox" Region="9, 39, 432, 50" />
+                          </scg:List>
+                        </uc:CVCache.CvUiElements>
+                        <uc:CVCache.OcrTexts>
+                          <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="7">
+                            <uc:OcrTextInfo Region="8, 16, 8, 8" Text="*" />
+                            <uc:OcrTextInfo Region="18, 14, 32, 14" Text="Auth" />
+                            <uc:OcrTextInfo Region="52, 14, 36, 14" Text="Code" />
+                            <uc:OcrTextInfo Region="24, 56, 33, 14" Text="0000" />
+                            <uc:OcrTextInfo Region="8, 96, 37, 12" Text="Invalid" />
+                            <uc:OcrTextInfo Region="48, 96, 28, 12" Text="Auth" />
+                            <uc:OcrTextInfo Region="78, 96, 30, 12" Text="Code" />
+                          </scg:List>
+                        </uc:CVCache.OcrTexts>
+                      </uc:CVCache>
                     </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NGetText.Target>
-              <uix:NGetText.TextString>
-                <OutArgument x:TypeArguments="x:String">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">errorMessage</CSharpReference>
-                </OutArgument>
-              </uix:NGetText.TextString>
-            </uix:NGetText>
+                  </uc:CvCacheContainer.Caches>
+                </uc:CvCacheContainer>
+              </p:CVScope.DesignTimeCacheContainer>
+              <p:CVScope.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000">
+                    <p1:UiPathScreenOCR.Image>
+                      <InArgument x:TypeArguments="sd:Image">
+                        <CSharpValue x:TypeArguments="sd:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">Image</CSharpValue>
+                      </InArgument>
+                    </p1:UiPathScreenOCR.Image>
+                  </p1:UiPathScreenOCR>
+                </ActivityFunc>
+              </p:CVScope.OCREngine>
+              <p:CVScope.Target>
+                <ui:Target Element="{x:Null}" Id="f24f4337-23fe-400e-8767-87c7d3248297" InformativeScreenshot="faf0c5a2cf393d6c7fafad9d1fc62682" Selector="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;" WaitForReady="INTERACTIVE">
+                  <ui:Target.ClippingRegion>
+                    <ui:Region Rectangle="401, 370, 463, 120" />
+                  </ui:Target.ClippingRegion>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </p:CVScope.Target>
+              <p:CVScope.UseLocalServer>
+                <InArgument x:TypeArguments="x:Boolean" />
+              </p:CVScope.UseLocalServer>
+            </p:CVScope>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">errorMessage</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
             <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="952,115.2" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
               <uta:VerifyExpression.Expression>
                 <InArgument x:TypeArguments="x:Boolean">

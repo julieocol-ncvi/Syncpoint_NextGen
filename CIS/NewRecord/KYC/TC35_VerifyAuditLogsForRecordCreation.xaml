@@ -98,7 +98,7 @@
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="710.8000000000001,4179.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="907.6,4179.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="auditLog" />
     </Sequence.Variables>
@@ -301,6 +301,9 @@
                   </Sequence>
                 </ActivityAction>
               </p:CVScope.Body>
+              <p:CVScope.DesignTimeCache>
+                <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+              </p:CVScope.DesignTimeCache>
               <p:CVScope.DesignTimeCacheContainer>
                 <uc:CvCacheContainer>
                   <uc:CvCacheContainer.Caches>
@@ -386,7 +389,7 @@
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable CVScreenId="2c48a34b-ba4d-4db0-a5a7-7f16d38f9a5c" CvTextArea="1739, 274, 160, 17" CvType="AnyWordGroup" DesignTimeRectangle="1739, 274, 160, 17" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="fce35052-626b-4845-85d0-671567543684" InformativeScreenshot="935a92d96b2e0bdaf8a013add258bed5.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="2c48a34b-ba4d-4db0-a5a7-7f16d38f9a5c" CvTextArea="1626, 274, 111, 16" CvTextArgument="Record Created:" CvType="Text" DesignTimeRectangle="1626, 274, 111, 16" ElementType="Text" Guid="744dad4c-698f-4f1f-987b-132daaf8cd2f" SearchSteps="CV" TargetType="ComputerVisionBased" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -410,7 +413,7 @@
                 </InArgument>
               </ui:LogMessage.Message>
             </ui:LogMessage>
-            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="484.8,115.2" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Audit Log is displayed" sap:VirtualizedContainerService.HintSize="484.8,115.2" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
               <uta:VerifyExpression.Expression>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">System.Text.RegularExpressions.Regex.IsMatch(auditLog, DateTime.Now.ToString("MM") + "/" + DateTime.Now.ToString("yyyy") + " - Branch 99329")</CSharpValue>
