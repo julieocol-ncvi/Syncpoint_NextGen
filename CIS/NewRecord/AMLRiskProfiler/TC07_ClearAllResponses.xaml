@@ -81,7 +81,7 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="915.6,2957.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="855.6,2957.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="remittanceValue" />
       <Variable x:TypeArguments="x:Boolean" Name="pawningValue" />
@@ -91,7 +91,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="483.2,2934.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="b32221d1-ee51-469a-a963-f622cd19dbff" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="483.2,2934.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="b32221d1-ee51-469a-a963-f622cd19dbff" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -153,7 +153,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="d0de8c72-c466-4330-9f65-c7c4fcb1b019" CvTextArea="452, 492, 27, 16" CvTextArgument="Yes" CvType="Text" DesignTimeRectangle="390, 476, 1508, 50" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='5' name='Yes' role='radio button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='Yes' role='radio button' check:fulltext='Yes' /&gt;" Guid="c35e8d47-0cc1-46eb-ac96-ab6ba5d937b9" InformativeScreenshot="1ccf9c97252018e5af5c9b07d8f0613b.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="d0de8c72-c466-4330-9f65-c7c4fcb1b019" CvTextArea="386, 444, 926, 20" CvTextArgument="5. For PAWNING (including subusta/sale item), is the amount of a single transaction of client above PHP 500,000.00?" CvType="Text" DesignTimeRectangle="389, 441, 923, 24" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='5. For PAWNING (including subusta/sale item), is the amount of a*' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='5. For PAWNING (including subusta/sale item), is the amount of a*' role='text' automationid='' check:fulltext='5. For PAWNING (including subusta/sale item), is the amount of a single transaction of client above PHP 500,000.00?' /&gt;" Guid="f8597d84-e772-42ae-92b8-bbd370485d23" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -174,7 +174,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="d0de8c72-c466-4330-9f65-c7c4fcb1b019" CvTextArea="454, 700, 25, 16" CvTextArgument="No" CvType="Text" DesignTimeRectangle="390, 682, 1508, 51" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='6' name='No' role='radio button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='No' role='radio button' check:fulltext='No' /&gt;" Guid="32926881-995b-490f-ae68-0f30844ca71a" InformativeScreenshot="ccdbb832404d2f353e437f8f54e3e23f.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="d0de8c72-c466-4330-9f65-c7c4fcb1b019" CvTextArea="386, 599, 715, 21" CvTextArgument="6. For REMITTANCE, is the amount of a single transaction of client above PHP 500,000.00?" CvType="Text" DesignTimeRectangle="389, 597, 712, 24" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='6. For REMITTANCE, is the amount of a single transaction of clie*' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='6. For REMITTANCE, is the amount of a single transaction of clie*' role='text' automationid='' check:fulltext='6. For REMITTANCE, is the amount of a single transaction of client above PHP 500,000.00?' /&gt;" Guid="df222c30-2ad3-45e8-9a89-a8aeafa9ab1e" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -216,14 +216,14 @@
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable CVScreenId="d37306c8-77b4-447c-84ac-c9df74450925" CvTextArea="452, 892, 27, 16" CvTextArgument="Yes" CvType="Text" DesignTimeRectangle="390, 876, 1508, 50" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='5' name='Yes' role='radio button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='Yes' role='radio button' check:fulltext='Yes' /&gt;" Guid="5b5c09ab-1ec3-44d0-8348-ff8ed2a30cad" InformativeScreenshot="020a0bdbfb1f4d02100a9eb5f46116a7.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="d37306c8-77b4-447c-84ac-c9df74450925" CvTextArea="386, 844, 926, 20" CvTextArgument="5. For PAWNING (including subusta/sale item), is the amount of a single transaction of client above PHP 500,000.00?" CvType="Text" DesignTimeRectangle="389, 841, 923, 24" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='5. For PAWNING (including subusta/sale item), is the amount of a*' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='5. For PAWNING (including subusta/sale item), is the amount of a*' role='text' automationid='' check:fulltext='5. For PAWNING (including subusta/sale item), is the amount of a single transaction of client above PHP 500,000.00?' /&gt;" Guid="65cebe51-1e1c-4c92-bcf3-c464746ccb30" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NGetAttributeGeneric.Target>
             </uix:NGetAttributeGeneric>
-            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Clear All Responses option" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
               <uta:VerifyExpression.Expression>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">pawningValue == false</CSharpValue>
@@ -239,14 +239,14 @@
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable CVScreenId="07d9eaf0-abbf-488b-a2fe-ee36b743abf7" CvTextArea="454, 900, 25, 16" CvTextArgument="No" CvType="Text" DesignTimeRectangle="390, 882, 1508, 51" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='6' name='No' role='radio button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='No' role='radio button' check:fulltext='No' /&gt;" Guid="9a41a6e3-d8d2-46cb-aaf6-e520c08a1732" InformativeScreenshot="c02053448c91b487628ad86e6ec066b9.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="07d9eaf0-abbf-488b-a2fe-ee36b743abf7" CvTextArea="386, 799, 715, 21" CvTextArgument="6. For REMITTANCE, is the amount of a single transaction of client above PHP 500,000.00?" CvType="Text" DesignTimeRectangle="389, 797, 712, 24" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='6. For REMITTANCE, is the amount of a single transaction of clie*' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='6. For REMITTANCE, is the amount of a single transaction of clie*' role='text' automationid='' check:fulltext='6. For REMITTANCE, is the amount of a single transaction of client above PHP 500,000.00?' /&gt;" Guid="b7747038-0f1a-42ce-bcd6-9caeeb954702" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NGetAttributeGeneric.Target>
             </uix:NGetAttributeGeneric>
-            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="416,115.2" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Clear All Responses option" sap:VirtualizedContainerService.HintSize="416,115.2" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
               <uta:VerifyExpression.Expression>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">remittanceValue == false</CSharpValue>

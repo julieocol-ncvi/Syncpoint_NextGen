@@ -80,7 +80,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,1932" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="61c54f45-bf2b-4e98-83f2-53438c278946" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,1932" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="61c54f45-bf2b-4e98-83f2-53438c278946" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -96,7 +96,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="ef315cb5-d21c-4329-9687-cfca7802ef41" CvElementArea="855, 842, 210, 55" CvTextArea="898, 860, 121, 18" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="888, 856, 143, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_27.Button_QMLTYPE_11' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_27.Button_QMLTYPE_11.Label*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_27.Button_QMLTYPE_11' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_27.Button_QMLTYPE_11.Label*' role='text' check:text='Yes, I Understand' /&gt;" Guid="3636751e-9a9a-4a40-b459-5ce7c9b45192" InformativeScreenshot="102477125d433994dd7249d68f2e9da4.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindow' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="ef315cb5-d21c-4329-9687-cfca7802ef41" CvElementArea="855, 842, 210, 55" CvTextArea="898, 860, 121, 18" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="858, 838, 203, 65" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_27.Button_QMLTYPE_11' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_27.Button_QMLTYPE_11' role='push button' check:text='Yes, I Understand' /&gt;" Guid="ed2243af-2cc3-428b-8ac0-900172f2b9d7" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -183,7 +183,7 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable CVScreenId="576aa982-b507-43be-811d-15691f52d8f0" CvTextArea="1039, 709, 207, 20" CvTextArgument="Are all entries correct?" CvType="Text" DesignTimeRectangle="1039, 709, 207, 20" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="fc2cb095-1828-4121-826e-447edc21382f" InformativeScreenshot="7eaf7b0e32cfc2fa3c4ef943682c294c.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="576aa982-b507-43be-811d-15691f52d8f0" CvTextArea="1041, 657, 203, 25" CvTextArgument="AML Risk Profiler" CvType="Text" DesignTimeRectangle="1041, 657, 203, 25" ElementType="Text" Guid="bc94c084-86b1-4dd8-8ac8-5fb0e0aee6cf" SearchSteps="CV" TargetType="ComputerVisionBased" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
