@@ -32,6 +32,8 @@
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -85,50 +87,29 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1022,2116.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1036.8,2563.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1022,2094" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1036.8,2540" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,1774" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1003.2,2185.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_FirstName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="954,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
-              <ui:GetRobotAsset.Value>
-                <OutArgument x:TypeArguments="x:String">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">in_FirstName</CSharpReference>
-                </OutArgument>
-              </ui:GetRobotAsset.Value>
-            </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_MiddleName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="954,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
-              <ui:GetRobotAsset.Value>
-                <OutArgument x:TypeArguments="x:String">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">in_MiddleName</CSharpReference>
-                </OutArgument>
-              </ui:GetRobotAsset.Value>
-            </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_LastName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="954,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
-              <ui:GetRobotAsset.Value>
-                <OutArgument x:TypeArguments="x:String">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">in_LastName</CSharpReference>
-                </OutArgument>
-              </ui:GetRobotAsset.Value>
-            </ui:GetRobotAsset>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="954,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="969.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="c8d391fa-0e67-4909-bec3-d343b0d9b954" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="874, 907, 172, 36" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_17.Button_QMLTYPE_5' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_17.Button_QMLTYPE_5.Label_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_17.Button_QMLTYPE_5' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_17.Button_QMLTYPE_5.Label_*' role='text' check:text='Yes, I Understand' /&gt;" Guid="78650902-9167-4c2e-8aeb-cb66592e2df0" InformativeScreenshot="842382f6857cfc095ee1236c15893a83.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindow' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="c8d391fa-0e67-4909-bec3-d343b0d9b954" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="838, 886, 244, 78" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_17.Button_QMLTYPE_5' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_17.Button_QMLTYPE_5' role='push button' check:text='Yes, I Understand' /&gt;" Guid="98f19201-7151-4b5a-b477-d1786a4adb4a" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -145,20 +126,33 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="searchCustomer - Invoke Workflow File (Reusable\searchCustomer.xaml)" sap:VirtualizedContainerService.HintSize="954,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable\searchCustomer.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SearchByClientNumber - Invoke Workflow File (Reusable\SearchByClientNumber.xaml)" sap:VirtualizedContainerService.HintSize="969.6,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Reusable\SearchByClientNumber.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_MiddleName">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">in_MiddleName</CSharpValue>
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_LastName">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">in_LastName</CSharpValue>
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_FirstName">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">in_FirstName</CSharpValue>
-                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ClientNumber">993020000013</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="954,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '993020000013'" sap:VirtualizedContainerService.HintSize="969.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="d20d6b14-6c90-47c3-8185-9f906722c613" CvTextArea="414, 466, 120, 18" CvTextArgument="993020000013" CvType="Text" DesignTimeRectangle="396, 443, 177, 65" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='993020000013' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='993020000013' role='text' automationid='' check:fulltext='993020000013' /&gt;" Guid="44c0a7b8-e1c9-4f6a-aa2c-c7a18e2021d5" InformativeScreenshot="25747effacf3db9b0e4d780c03fc5d17.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="d20d6b14-6c90-47c3-8185-9f906722c613" CvTextArea="415, 402, 121, 17" CvTextArgument="Client Number" CvType="Text" DesignTimeRectangle="396, 379, 177, 65" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Client Number ▲ ▼' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Client Number ▲ ▼' role='text' automationid='' check:fulltext='Client Number&amp;#xD;&amp;#xA;▲&amp;#xD;&amp;#xA;▼' /&gt;" Guid="cc1985cb-abf6-4af4-9be4-69fc25f15a67" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="969.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="f91c0023-5cca-486d-b637-d43c0c9e2fe5" CvElementArea="1352, 958, 252, 66" CvTextArea="1449, 980, 57, 22" CvTextArgument="Close" CvType="Button" DesignTimeRectangle="1356, 961, 245, 61" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl idx='2' name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl automationid='' name='Close' role='push button' check:fulltext='Close' /&gt;" Guid="efc2c9eb-46a8-4e15-952f-740614abab13" InformativeScreenshot="afe73668372e2771d728d465177085af.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -173,15 +167,15 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Report Client'" sap:VirtualizedContainerService.HintSize="954,512.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Report Client'" sap:VirtualizedContainerService.HintSize="969.6,511.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,266" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,260.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyTrue - Invoke Workflow File (Reusable\verifyTrue.xaml)" sap:VirtualizedContainerService.HintSize="416,203.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable\verifyTrue.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyTrue - Invoke Workflow File (Reusable\verifyTrue.xaml)" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable\verifyTrue.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="outputOfVerification">Report client icon is visible</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="titleOfVerification">Searching for report client icon</InArgument>
@@ -190,13 +184,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,266" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,260.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyFalse - Invoke Workflow File (Reusable\verifyFalse.xaml)" sap:VirtualizedContainerService.HintSize="416,203.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Reusable\verifyFalse.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyFalse - Invoke Workflow File (Reusable\verifyFalse.xaml)" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Reusable\verifyFalse.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="outputOfVerification">Report client icon is not visible</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="titleOfVerification">Searching for report client icon</InArgument>
@@ -206,6 +200,62 @@
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable CVScreenId="83827829-ef69-4e18-9773-c66a31027000" CvElementArea="1496, 788, 374, 76" CvType="Button" DesignTimeRectangle="1499, 790, 369, 73" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Report Client' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Report Client' role='push button' automationid='' check:fulltext='Report Client' /&gt;" Guid="64ec7bac-7311-4730-a4a6-e51bb0877a84" InformativeScreenshot="705aa86e81741b13344940da7ac6cdc7.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Report Client'" sap:VirtualizedContainerService.HintSize="969.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="43782493-6133-4a57-86fa-004331da39c4" CvElementArea="1470, 657, 407, 63" CvType="Button" DesignTimeRectangle="1473, 659, 403, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Report Client' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Report Client' role='push button' automationid='' check:fulltext='Report Client' /&gt;" Guid="3ceaa13a-6bc8-41e2-95dc-2554696df178" InformativeScreenshot="7c0c03ebc4265676f03c1e64ed7a0818.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Report Client'" sap:VirtualizedContainerService.HintSize="969.6,504" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a5cc801e-3067-4b95-afdb-72f72984f93e" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="467.2,260.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyTrue - Invoke Workflow File (Reusable\verifyTrue.xaml)" sap:VirtualizedContainerService.HintSize="433.6,199.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Reusable\verifyTrue.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="outputOfVerification">Report client button is clicked</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="titleOfVerification">Clicking report client button</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,260.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyFalse - Invoke Workflow File (Reusable\verifyFalse.xaml)" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Reusable\verifyFalse.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="outputOfVerification">Report client button is not clicked</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="titleOfVerification">Clicking report client button</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable CVScreenId="0488f5d4-8a88-4f72-a929-4bdfdab796cf" CvTextArea="925, 352, 156, 28" CvTextArgument="Report Client" CvType="Text" DesignTimeRectangle="925, 352, 156, 30" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="8e21b6d8-039d-44a6-b57a-a706d9030ce1" InformativeScreenshot="8de9dfbf8cf7e6636df6b2143cbc2e5c.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0488f5d4-8a88-4f72-a929-4bdfdab796cf" CvElementArea="855, 338, 56, 53" CvType="Icon" DesignTimeRectangle="853, 336, 60, 57" ElementType="Icon" Guid="a852719e-812b-43b2-8b64-48641b94512a" ImageBase64="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" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
           </Sequence>
