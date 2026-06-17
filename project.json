@@ -70,83 +70,6 @@
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "61ad32e7-f868-4d2a-af78-199c170f4d04",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC01_RedirectToViewDetails.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "6b74080f-ea03-4004-b032-49aa2c49a424",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC02_DetailsInReadOnlyFormat.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "3c242e1e-d1a0-4a2b-99b2-11a7894724e3",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC03_LastUpdateLogsDisplayed.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "64395c1e-fee4-4685-93fb-0638fc1ef0c4",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC04_RecordCreationDateDisplayed.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "959fe206-cf91-4b18-81b1-8d73d876cf6a",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC05_OTPVerifiedIndicator.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "75c02497-1ad1-4aaf-ad58-ef73e843e329",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC06_EditButtonAvailable.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "cdac15ac-93d6-4ee4-81be-084c6db0cefa",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC07_OnlineEDDAvailable.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "85006589-15c5-401c-9053-52535f3e46b7",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC08_AMLRiskProfileDisplayed.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "a5a7558f-23f8-4980-b077-2ceed5fb1693",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC01_RedirectToEditModule.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "2011d250-1f12-4481-a908-7d84a948899e",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC02_NameFieldsUneditable.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "b590d156-24cc-4356-a7ff-8c75ee672d2e",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC03_DateOfBirthUneditable.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "2a1fd3ca-e5ea-48ea-a453-d8b65392fa07",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
@@ -165,76 +88,6 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "CIS\\ClientPreview\\ReportClient\\TC03_SubmitReportSuccessfully.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "c578971e-fb68-425a-8dfc-feefcb9871f3",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC04_EditAllowedFieldAndSave.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "bdb623b0-bdd5-4045-a710-bfbd82e0153e",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC05_ModificationLogsUpdated.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "e48b7c5d-8faf-4bfa-bac2-2c9f035ed3bd",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC06_RealTimeUpdateAfterEdit.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "54d67546-c210-4d63-8761-2a614362fdee",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC07_OTPTriggeredOnMobileChange.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "bd029d69-34d4-4dc0-b3f4-fd5c07495309",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC01_EDDSectionAvailable.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "c532e546-fd80-43ba-b369-fb818b4748ec",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC02_EDDPromptedForHighRisk.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "10ede242-6c28-4ce6-9d10-0100593a3697",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC03_EDDChecklistDisplaysQuestions.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "556bd985-1eec-4a47-baf8-43f50b403b86",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC04_EDDAutoPullsCISData.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "4da846f6-7dee-4ff6-aa0a-24f6e7df0a03",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC05_EDDIncompleteSubmissionBlocked.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "27d58d0f-276b-4b80-9208-43d78e8c090a",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC06_EDDSubmitSuccessfully.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -529,97 +382,6 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "CIS\\NewRecord\\CreateRecord\\TC42_Checkbox_Single_And_Multiple_Selection_Validation.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "81a38bc4-1946-42eb-9767-ec51ffcbf979",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC07_EDD_Submit_Confirmation_Message.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "b4ca8d8c-eb1e-4115-a83f-7dffd2a2cc14",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC08_EDD_Routed_To_AOM_With_Email.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "8687f2c0-4499-480d-8d95-c1a781a9c070",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC09_EDD_Auto_Routes_To_Correct_AOM.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "27f7ac31-5a25-4ce9-953b-1a607a28d3f3",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC10_EDD_Notification_In_Customer_Dashboard.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "0026c57f-9d8d-483b-ac8c-7069b97b8dcc",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC11_EDD_Checklist_Button_Opens_Form.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "95d65034-3247-43c7-89d4-da1d4fc56161",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC09_OnlineEDDRedirectOnClick.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "0051da19-101e-4b31-9b22-f5c933ac4945",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC08_KYCLevelDisplayed.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "ad45dbb9-4ce6-4922-aa6d-8b97a503adda",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC09_FullKYCLevelCannotBeChanged.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "989f5959-87af-44f6-b7b7-2c321058f3c3",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC10_UpgradeBasicToFullKYC.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "05fe614a-a782-4c10-bf3c-1ce076cf4edd",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC11_NameAndDOBUneditableDuringUpgrade.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "ea4fe59e-397d-40b3-9c5b-e594d3917b19",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC12_EditBasicKYCWithoutUpgrade.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "333df31c-2f2b-468b-a696-9f900b4fb797",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC13_LastUpdateLogsVisibleInEdit.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "7ea4e6cc-1df7-48e8-ab9f-370e22ad1a56",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC14_PersonalDetailsSectionUneditable.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -1012,13 +774,6 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "CIS\\ClientPreview\\CustomerRisk\\TC03_HandlingGuideDisplayed.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "04df9b16-9d64-49b7-93a8-b49d30e09284",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\Edit\\TC04_ClientImageInRiskPopup.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -1616,67 +1371,494 @@
         "fileName": "CIS\\ClientPreview\\OffersPopup\\TC03_ViewAgainOffersPopup.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "31f50265-2457-4e6a-8317-5ac7e2d94b7a",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "CIS\\ClientPreview\\ReportClient\\TC04_ReportClientIconDisplayCorrect.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "64d4078a-a9b7-4c82-a8aa-1d372d4542b2",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "CIS\\ClientPreview\\ReportClient\\TC05_DropdownSupportsKeyboardNavigation.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "d007ef90-fd41-47d3-9a8c-6c1e9300b17b",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "CIS\\ClientPreview\\ReportClient\\TC06_NewlineNotIncludedInCharacterCount.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "53c686a9-9b4c-4434-945b-b8f5aeee4143",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "CIS\\ClientPreview\\ReportClient\\TC07_DOCDOCXAndPDFFileFormatsSupported.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "6760ce4e-6690-4352-a7a4-78d30fc0872e",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ReportClient\\TC08_AttachmentEnhancementWorking.xaml"
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC08_AttachFileToReportClient.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "e5aa9c0c-dc44-4d73-bf3d-39a079eb0789",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ReportClient\\TC09_FirstDropdownItemNotBoldOrHighlighted.xaml"
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC09_RemoveAttachmentBeforeSubmission.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "9588368f-c963-48fa-8bbf-8bfd04452ed9",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ReportClient\\TC10_ReportClientIconPresent.xaml"
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC10_FileSizeExceeds2MBPerFileRejected.xaml"
       },
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "22172d89-b0c0-423c-8199-abddbdfd2847",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ReportClient\\TC11_NoExtraNewlineOnErrorMessage.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "b6cb1c36-61d2-4a6f-9d29-a91978bfbb0f",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "CIS\\ClientPreview\\ReportClient\\TC12_DeleteAndAttachmentIconsDisplayed.xaml"
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC12_InvalidFileTypeRejected.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "50025350-6b4b-461a-a23f-2fd56c9b6f17",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC15_NoExtraNewlineOnErrorMessage.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "325362d5-4140-486c-a97d-b065fc6a03cc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC11_TotalAttachmentSizeExceeds15MBRejected.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "44d15086-4723-4193-833c-39bb77abfe45",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC13_SubmitReportWithoutAttachment.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cc18f320-90f6-4d6a-a1b8-5aa2f2e73f3f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ReportClient\\TC14_FirstDropdownItemNotBoldOrHighlighted.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1a911a78-422d-4bf9-9b72-8878ac2ebf4c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC01_RedirectToViewDetailsScreen.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "01603852-a7d9-4e57-afdb-774cb623923b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC02_DetailsDisplayedInReadOnlyFormat.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0caa6fc0-61fd-4199-8f42-c0f90dcf5e0b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC03_LastUpdateLogsDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "27c1798e-e8c3-40b4-8209-e93c5514e2dc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC04_RecordCreationDateDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a99d2bdd-5280-47a3-8604-c21388bc14f1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC05_OTPVerifiedIndicator.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e2fc2c73-5e26-48d9-ba2f-5bce51849d03",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC06_EditButtonAvailable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6689a13a-cdd5-4cfb-9591-d4bd2a8dd7ae",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC07_OnlineEDDAvailable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "186cc737-2dec-438e-a6d0-9806c6d2e984",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC08_AMLRiskProfileAndRatingDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "75763de5-9758-433e-8626-1f14d900623d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC09_EditClientRecordButtonUIDisplayCorrect.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fda2e004-72dc-4567-8b9c-666261d56897",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC10_DisabledFieldsNotAccessibleViaKeyboardNavigation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0a6b28da-45d4-43bd-b25a-c3ed1cb94175",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\ViewDetails\\TC11_ModuleTitleDisplaysViewDetails.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a8063e85-a56e-48ed-8e4c-0aab0bc503ae",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC01_RedirectToEditModule.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "75290103-4edd-4343-9381-c75a84ecce09",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC02_NameFieldsUneditable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f3a93a5e-4021-45a7-abc0-1c58af86a6a8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC03_DateOfBirthUneditable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "12090d38-f2ad-4cf8-89e9-a64c9001cd06",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC04_EditAllowedFieldAndSave.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0b957bde-cad8-47af-b09a-5f0e0cad4e33",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC05_ModificationLogsUpdatedAfterSave.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c81529bb-20c7-4214-9c7d-bcd00b97c46c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC06_RealTimeUpdateAfterEdit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ddc40b13-e11e-4a4d-9a6d-9dfea508956c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC07_OTPTriggeredOnMobileNumberChange.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "742c7752-72be-47ed-8f39-d325c36f48d8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC08_ViewRecordCreationAndUpdateDetails.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c0839189-f489-411f-960d-e4b5711d073a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC09_ViewClientKYCLevelAndEditingRules.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0880cebc-ac72-4f00-adc6-a3fe590894c8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC10_AllowUpdatingOfAMLRiskRating.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "39dd7760-32fa-48da-9f0b-301d9aa77083",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC11_UpgradeBasicKYCToFull.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0ab1f151-212d-4229-a1db-a4d5d0351590",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC12_UploadAdditionalImagesForKYCUpgrade.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3fb32921-2cdb-408f-a82e-fb796c19889f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC13_EditBasicKYCWithoutUpgrading.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d1187e87-fa61-4ec4-9f25-7c21257a1983",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC14_ConfirmAndApplyChangesInRecordsInstantly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "96a22237-8499-401d-8cd8-84d63ebeb6b7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC15_EnforceDataValidationAndComplianceRules.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ea490cb7-807d-47e8-9b9b-c4a5a0edfeaf",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC16_SafelyExitEditModeWithoutLosingChanges.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "01d3d5eb-b740-48c6-9d1d-0f1f3fd6b890",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC17_CheckboxBehaviorInEditModule.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7eafcab2-10f9-4d6b-bae8-4205922d2534",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC18_FullKYCInlineErrorsNotShownForBasicKYC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0acd3835-175b-4a13-8219-b458e41b9a4f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC19_OnlineEDDDisabledWhenEditing.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e116b64d-0b47-4b2c-a0b2-d6a6098a450a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC20_PlaceOfBirthRequiredForFullKYC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2cae34ca-4339-4d60-9130-f5fa1c50fe28",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC21_OthersFieldDataSavedUnderEmployment.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e9d3978d-32f7-4a0e-8962-1b3dc04deab1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC22_InlineErrorForFullKYCFieldsWhenRemoved.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d07cc609-586b-418c-90fc-588fa3f91695",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC23_SameAsPermanentAddressCheckboxStable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4a48cc6b-0e84-4539-bd8e-290935b03c56",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC24_BeneficiaryPlaceOfBirthOptional.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "138e022a-ff53-4172-9e8a-6a373e7c4505",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC25_TransactionNotificationsCheckboxSaved.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "989f8992-f21d-4f64-afce-843f32e0e69b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC26_DiscardChangesButtonWorksCorrectly.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2c4a6e5d-f3b2-4109-8d0c-f977ff6c5825",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC27_Question4AnswerUpdatesRealTime.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fb5dc9bd-dd07-4ec8-b28c-d3265e8ba7d6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC28_MiddleNameCheckboxAndNatureOfWorkSaved.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "68b333ad-bfc1-402d-a524-f149d118fbef",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC29_InternationalNumberViewEdit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2dc43076-0c9e-45c8-b12c-e22d02ab7518",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC30_InvalidMobileNumberValidation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3a230ec2-3323-40f2-a805-278dbd5ffa3d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC31_PlaceOfBirthStateProvinceReturnsCorrectCountryFormat.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c4d94c07-601e-40f0-bb55-3b5a69e2ada2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC32_ClearButtonConsideredAsChangeOnCancel.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4b570966-b8e4-48b3-9aee-9602f3d5797b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC33_CannotSelectPhilippinesWithoutStateProvince.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "80848b85-8178-49fe-bcf5-c691505bcdb5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC34_NatureOfWorkBusinessClearedOnDelete.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cc7edb86-199a-42c8-952a-501b3a34cfe9",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC35_IDExpirationDateFieldAvailable.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "27c1b1ba-210a-4ea9-a653-1a0e25ebb820",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC36_AMLRiskRatingUpdatePromptOnEdit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5a1b64a2-f6e6-4a0e-9994-5864aefb6990",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC37_UpgradingFromBasicToFullKYCEnhancedFlow.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a20e3efe-37da-4a32-bbbe-02a41ab62c91",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC38_DropdownContentNotCutOffForLongText.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fd77be1c-562a-4628-a630-c8d14913f4ab",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC39_DropdownClosesOnTabWithoutSelection.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f647c39c-feee-4747-9f9a-1c8d0d98530d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC40_CannotSaveWithoutMakingChanges.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fb080563-644c-4ceb-9d44-e3aa4bdc06a9",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\ClientPreview\\Edit\\TC41_ClientPreviewHeaderUpdatedAfterEdit.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5cdbddec-a523-4f7d-859d-65af38307fb8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC01_EDDAutoPromptsForHighRiskClients.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a562e072-0bb8-4090-b61c-cafbef062efb",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC02_ClientDetailsAutoPopulatedInEDDChecklist.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6ce97d22-bcbf-4a8c-a40a-650f3dc611cf",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC03_AllEDDChecklistFieldsDisplayed.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bfdbfbda-a53d-4d2e-8af7-c890ecf46d6d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC04_CompleteAllEDDChecklistResponses.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1e4e9e60-42c5-42ca-be15-57d0d6677e6d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC05_SubmitCompletedEDDChecklist.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a646970e-822f-4ebf-a036-e1d51363a376",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "CIS\\NewRecord\\OnlineEDD\\TC06_SubmitEDDChecklistWithAllFieldsBlank.xaml"
       }
     ],
     "saveToCloud": false
