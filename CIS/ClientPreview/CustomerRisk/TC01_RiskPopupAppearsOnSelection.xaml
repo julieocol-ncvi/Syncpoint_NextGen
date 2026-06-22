@@ -91,7 +91,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e642bbe4-3ad3-4f47-a998-d2eb2d852344" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e642bbe4-3ad3-4f47-a998-d2eb2d852344" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="d4569e8c-12b9-4cff-abb3-bee065e0ef44" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="874, 907, 172, 36" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_4.Button_QMLTYPE_5' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_4.Button_QMLTYPE_5.Label_Q*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_4.Button_QMLTYPE_5' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_4.Button_QMLTYPE_5.Label_Q*' role='text' check:text='Yes, I Understand' /&gt;" Guid="4d692088-4bc5-4ffd-b6d3-1c5e62f91ac1" InformativeScreenshot="48279ea10c2b86b94a6659aa9a2841cc.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindow' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -172,7 +172,7 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable CVScreenId="66435249-905a-4c03-99f6-7ab53f3e6990" CvTextArea="609, 301, 169, 23" CvTextArgument="Customer Risk" CvType="Text" DesignTimeRectangle="609, 301, 169, 23" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="f296fca3-2257-434c-848f-3073b40db63e" InformativeScreenshot="51d9c06a0f2dfc029b8e8eb69b2fd297.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="66435249-905a-4c03-99f6-7ab53f3e6990" CvTextArea="537, 389, 231, 36" CvTextArgument="ATTENTION" CvType="Text" DesignTimeRectangle="541, 378, 227, 55" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ATTENTION' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='ATTENTION' role='text' automationid='' check:fulltext='ATTENTION' /&gt;" Guid="11fb407c-f3f2-450f-b214-868211cd8547" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>

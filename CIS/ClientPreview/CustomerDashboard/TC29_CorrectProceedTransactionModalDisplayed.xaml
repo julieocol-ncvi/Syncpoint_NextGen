@@ -82,13 +82,13 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,2312" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,2352" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,2288.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,2328.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -100,7 +100,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_FirstName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_FirstName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Syncpoint Automation Testing" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">
@@ -110,7 +110,7 @@
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_MiddleName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_MiddleName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Syncpoint Automation Testing" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">
@@ -120,7 +120,7 @@
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_LastName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_LastName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Syncpoint Automation Testing" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">
@@ -130,7 +130,7 @@
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7af11a35-7fa4-429a-aedd-ae02055986d0" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="72ac97c3-5244-446c-a853-6088ce20d381" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="874, 907, 172, 36" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_24.Button_QMLTYPE_6' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_24.Button_QMLTYPE_6.Label_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_24.Button_QMLTYPE_6' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_24.Button_QMLTYPE_6.Label_*' role='text' check:text='Yes, I Understand' /&gt;" Guid="1fd558e7-b031-43eb-b989-a0ca535695f9" InformativeScreenshot="645994eb9d9991f23f6093df9b629642.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindow' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -237,7 +237,7 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable CVScreenId="65afe656-2537-4048-a868-8e3c5c941279" CvTextArea="1020, 637, 247, 25" CvTextArgument="Proceed Transaction?" CvType="Text" DesignTimeRectangle="1020, 637, 247, 25" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="d4dd17fd-7793-4e4b-9674-3ad9d2eaedad" InformativeScreenshot="5086a52c284a90e0db9970f9cdc21b21.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' idx='*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="65afe656-2537-4048-a868-8e3c5c941279" CvElementArea="1097, 518, 97, 92" CvType="Icon" DesignTimeRectangle="1106, 527, 76, 75" ElementType="Icon" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl role='graphic' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl role='graphic' automationid='' /&gt;" Guid="c103f5d9-3efb-4422-8110-254931045380" ImageBase64="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" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
