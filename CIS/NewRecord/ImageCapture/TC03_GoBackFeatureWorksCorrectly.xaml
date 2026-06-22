@@ -1053,6 +1053,9 @@
                   </Sequence>
                 </ActivityAction>
               </p:CVScope.Body>
+              <p:CVScope.DesignTimeCache>
+                <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+              </p:CVScope.DesignTimeCache>
               <p:CVScope.DesignTimeCacheContainer>
                 <uc:CvCacheContainer>
                   <uc:CvCacheContainer.Caches>
@@ -1142,9 +1145,9 @@
               </uix:NCheckState.Target>
             </uix:NCheckState>
             <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_10" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_44" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_48" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="3ba992db-4abc-4452-878d-75d365a4a446" CvElementArea="1148, 885, 210, 54" CvTextArea="1190, 902, 124, 22" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1151, 887, 205, 51" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='text' automationid='' check:fulltext='Capture Image' /&gt;" Guid="040e7ec0-a628-480f-acad-1a8449bd113b" InformativeScreenshot="d6272e0ed367baa16ec12789420f5b31.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="addaa6ff-d6dd-4d6c-8d66-1409324f2b41" CvElementArea="930, 885, 209, 54" CvTextArea="965, 902, 138, 22" CvTextArgument="Attach an Image" CvType="Button" DesignTimeRectangle="932, 887, 205, 51" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="fc63b2f5-026e-488b-b811-f7141663da90" InformativeScreenshot="3840d9f76f5bdb337b916670275236d5.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1204,10 +1207,10 @@
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable CVScreenId="a1327075-444e-484d-aa00-74c5a1e9ad6c" CvElementArea="991, 1001, 208, 55" CvTextArea="1055, 1019, 79, 20" CvTextArgument="Go Back" CvType="Button" DesignTimeRectangle="995, 1003, 201, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Go Back' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Go Back' role='push button' automationid='' check:fulltext='Go Back' /&gt;" Guid="9a8b4fa4-8c3e-4bfe-a916-40a622f16b9d" InformativeScreenshot="a74fcd0b3d79f0d865352fe1382f3d81.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                <uix:TargetAnchorable CVScreenId="7544a434-ad05-4b4e-88c3-c91d6eb1d2fb" CvElementArea="991, 955, 208, 55" CvTextArea="1055, 972, 79, 20" CvTextArgument="Go Back" CvType="Button" DesignTimeRectangle="995, 957, 201, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Go Back' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Go Back' role='push button' automationid='' check:fulltext='Go Back' /&gt;" Guid="f0f54907-5ed6-4d5e-8730-7787f5b10ff6" InformativeScreenshot="d4e085ca61e840c768781bff4f471969.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target CVScreenId="a1327075-444e-484d-aa00-74c5a1e9ad6c" CvTextArea="960, 325, 174, 28" CvTextArgument="Capture Image" CvType="Text" DesignTimeRectangle="960, 325, 174, 28" ElementType="Text" Guid="2d023888-ceba-4473-8b3c-2c8dcd287a80" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      <uix:Target CVScreenId="7544a434-ad05-4b4e-88c3-c91d6eb1d2fb" CvTextArea="959, 370, 195, 29" CvTextArgument="Attach an Image" CvType="Text" DesignTimeRectangle="959, 370, 195, 29" ElementType="Text" Guid="fce42abb-efde-42a9-b393-857dcb9807f0" SearchSteps="CV" TargetType="ComputerVisionBased" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>

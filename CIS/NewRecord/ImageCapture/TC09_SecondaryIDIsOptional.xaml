@@ -90,19 +90,19 @@
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,19991.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,25791.199999999997" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,19968" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,25768" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="985.6,19653.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="985.6,25453.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1204,9 +1204,10 @@
                 <InArgument x:TypeArguments="x:Boolean" />
               </p:CVScope.UseLocalServer>
             </p:CVScope>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_10" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="8fe08a67-8e1f-4ee4-b9ba-26732e7755e9" CvElementArea="1148, 931, 210, 40" CvTextArea="1190, 949, 124, 21" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1151, 933, 205, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='text' automationid='' check:fulltext='Capture Image' /&gt;" Guid="9e104424-83f0-4f0b-b689-eec78b58d4de" InformativeScreenshot="0bc613f8d80cc4e84bb92e85f3b47c67.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="7454f721-2558-4f75-9c85-e656539511ef" CvElementArea="930, 885, 209, 54" CvTextArea="965, 902, 138, 22" CvTextArgument="Attach an Image" CvType="Button" DesignTimeRectangle="932, 887, 205, 51" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="fabdaa1a-789d-4ce2-b59a-f3ba7cef4646" InformativeScreenshot="3840d9f76f5bdb337b916670275236d5.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1234,9 +1235,9 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_48" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="f713cc4e-2e37-4bb5-b3c9-13b8a44d5985" CvElementArea="1207, 1001, 200, 56" CvTextArea="1237, 1019, 139, 25" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' automationid='' check:fulltext='Capture Image' /&gt;" Guid="6cfc5088-1f6e-4d30-a009-837ca9bbcc8e" InformativeScreenshot="f33019ac90637413edaa081062600e04.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="4f5fde61-d9c3-4585-980b-7b151bf39486" CvTextArea="1065, 617, 156, 25" CvTextArgument="Attach an Image" CvType="Text" DesignTimeRectangle="1047, 604, 194, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="3c96253c-050c-4553-a8e6-268a70e4c443" InformativeScreenshot="c4c13ee3f5ee477ef274dcba6af7d2a8.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1249,9 +1250,61 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="952,910.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="91a3941a-1cbc-4400-b147-537759924387" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,587.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="91a3941a-1cbc-4400-b147-537759924387" Text="cis" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="a36737cf-b548-46d9-ba0e-82ff68e66eac" CvElementArea="228, 498, 292, 32" CvType="InputBox" DesignTimeRectangle="234, 505, 262, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="577faa90-cb05-4b45-a48f-67e665a94d5a" InformativeScreenshot="8fcd473d7066783817d9868c84b1997f.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="a36737cf-b548-46d9-ba0e-82ff68e66eac" CvTextArea="155, 506, 68, 15" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="157, 505, 67, 20" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="2cddfc8d-caf7-4907-ad00-3deaadd6a9dc" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="416,239.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 800, 600" FilePath="D:\\Syncpoint\\Modules\\ClientPreview\\clientpreview.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATISURBVFhHvZdPaBxVHMcnTfZP/jSykgoeahXswaBmk209GhD06EFZd+ffzkYkCCKC4qUBaSmk6KUIUZJmJkIkFkOrbZHd2aDGHtx5I8GD9FC8KEHJIakNSWbem4blJ292Npm87G42bWa+8CWHwI8P3/e+837LcUEIoC3/m30yh0hRRriSQwRknyWfRWqDgGBgLCDyhbIIcXbc0QqgbeR3Z0AxSSln4m0KxwL6IT3AVbFMzil/BQ3HcZy8ZD+lIEfPIfxAMatwTQENvMKXnVzwyXEcRxNQTKdAk6NwLQCuimVbCQ8OYQpXqcE1AxQRxiIi54KHA2ijx5o3nYLCwDUCdOFMMhH8nfMKMYIcXTHxdr4BHAO4Gk5yXiHyJikpCD9g4eqlJxl4JdQ797bpFPJeci0ArkoopLaml6Ezb+JC3iSVEdNpCkctIYxlwx4LHs57IarJ7cI1A6zCkYlQ4BTTSdI7lzfJdjM4H+BqOMlxHEeTc+EQcQvhdz042cAruTDvnHesO4VoBOcCGnhNDrOttUIcBEYth1kI/wvRKlwu7JWp9kI0A6N2j9Wwx9Ll5U523JGLXZkOsmyQlVDvHLsyNbL7KWlQiNEliAgGviAZ+IaE8E1qgbq8a541Ip+kliDin7NHjVameq4+YfULMbwIHTJyLkoIb4oIV6iFmo2qeZ+zrsnfmdv2Sf+cfXr/T4gpJpnJIYxZoD2peXC0EOydo7CCQT4SDXx/z1rv/faoWfDMG2Q7axDjjV/tU/45DUWPRjGd8zmE1+uBuc+XV4h6yXlw91qDw4Qv428yBn6a46DNP6upRLTWqxh4XEZkww9WXZnqF+LZAsT4snPxMMlRuPRt/Az9avhntSThD0jIBpmUDUx8+9xavZWpfx6iZxfsieGfrC0KcRAcNT1WN7mHgaspfQd6ZORckwxccbcSk4yxa3pqCiJnF/B4Sre3UiUbXvnZdgFYOCa95eqdewS4mmhxZERmpDovxPAixM+U7I9TurVO4YZKNtC/r/2CgS/XhdvmD1OIVpW+A9F9yS1BhMIN6dZ/FMzvMws2vLqIIVs+gkI8jOidS5WsSzS5GtQg49QCPe4dyEcrxGHkwi3YE0O6vdUIrmb6v5d/tCFTPoJCtCr6ORnU7fmhklVhgVgndRtevHkf+j68dePJ0Vtd7KzAdGoR4knd+iqpW5iFqoElixY8d/VfSLx3DeLSDIlJM589Jswl2FmBiZZkoGhdSOr2Ogs3UNiC01fuQuLdb6FT1CggxERtMyaol7ul2SfYWYHppcJa72DJupTU7Q03NS+505N34fF3rkJ3Zhq6sirEBY0CQkzQrKiozXJhJvnCD5BIFq2ppG4RCtg/9w/0jczB8TenoOutaYgLahVO1CAquHYiglbkXlePs7MCU/8i9Azo9vXnv79XOTEyBz1pCualthfOdYTXKh2CNs+NToVXHNruvg++m4mJKvaD7YOrmddIO69+yglfhnfc3OhUJCJq56OCtt4QzHMHr1JvtvPqZS6tnWBHBSfx894Ir45HeW2jCdiO27Oq1Z6dng03SWEuEcmqk/QYG8G1Z3d9LDvtHMtcKXLi173sqOAkzXZHePW6W4j9qfnhqs5MV9oy6jyXnt/zE+J/PkNOLomBXpsAAAAASUVORK5CYII=" InformativeScreenshot="2c64d83446aeee6da49805a3f49490bd.png" Selector="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_50" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="aedd86ea-ae68-48d3-993f-5413e8430518" CvElementArea="1207, 1002, 200, 54" CvTextArea="1282, 1020, 47, 18" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Save' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Save' role='push button' automationid='' check:fulltext='Save' /&gt;" Guid="977937fc-a02a-42c0-abf5-d0a5bfb26b0b" InformativeScreenshot="d2d15ee82ad21fea7b9c2d1bacea6737.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="c95f5095-4191-4548-8c7d-afb717475d33" CvElementArea="1207, 955, 200, 55" CvTextArea="1282, 974, 47, 18" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1210, 957, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Save' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Save' role='push button' automationid='' check:fulltext='Save' /&gt;" Guid="07fe0bbb-c8d2-46be-86d0-77bc1c695805" InformativeScreenshot="8abc7b8ffedc13a76931f073a5094555.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1264,9 +1317,9 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ok'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ok'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="52c169e6-1045-4679-a03d-9f5fb6306642" CvElementArea="1044, 794, 199, 54" CvTextArea="1129, 811, 30, 21" CvTextArgument="Ok" CvType="Button" DesignTimeRectangle="1047, 797, 194, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Ok' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Ok' role='push button' automationid='' check:fulltext='Ok' /&gt;" Guid="04158d1c-e16f-4dea-bfd2-7d1280016827" InformativeScreenshot="5c2cd0f57999e284b4564501e1d53dc7.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="13b3b4e6-affd-4ee2-a466-c4aecce273d5" CvElementArea="1044, 794, 199, 54" CvTextArea="1129, 811, 30, 21" CvTextArgument="Ok" CvType="Button" DesignTimeRectangle="1047, 797, 194, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Ok' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Ok' role='push button' automationid='' check:fulltext='Ok' /&gt;" Guid="a1dd990a-649b-4640-9fc3-56cd2b048dd7" InformativeScreenshot="5c2cd0f57999e284b4564501e1d53dc7.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1461,9 +1514,10 @@
                 <InArgument x:TypeArguments="x:Boolean" />
               </p:CVScope.UseLocalServer>
             </p:CVScope>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_11" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_52" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="8c2f0d07-da2a-4894-b858-ed23ac29b5f5" CvElementArea="1147, 930, 212, 41" CvTextArea="1190, 949, 124, 21" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1151, 933, 205, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='text' automationid='' check:fulltext='Capture Image' /&gt;" Guid="ebbba49d-9407-47a5-a9d5-43f2b6b6ef43" InformativeScreenshot="b65696c02ee83ec57ba4cea982ffcad5.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="44a65dfa-7cc9-4a3f-91e2-5fd4d4716715" CvElementArea="930, 885, 209, 54" CvTextArea="965, 902, 138, 21" CvTextArgument="Attach an Image" CvType="Button" DesignTimeRectangle="932, 887, 205, 51" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="3ea1b626-6a51-4026-aba3-2fb4ff66c49f" InformativeScreenshot="805565d0e3cbca840e8bc96984527bd6.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1491,9 +1545,9 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_53" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="41f47713-0f97-4da3-aa1c-6a4ff5f172f3" CvElementArea="1207, 1001, 200, 56" CvTextArea="1237, 1019, 139, 25" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' automationid='' check:fulltext='Capture Image' /&gt;" Guid="67cc6fd3-f21f-43d5-857f-3b4c01ef840f" InformativeScreenshot="f33019ac90637413edaa081062600e04.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="1319ca5c-07ee-44ca-bf89-69585d1443f8" CvTextArea="1065, 617, 156, 25" CvTextArgument="Attach an Image" CvType="Text" DesignTimeRectangle="1047, 604, 194, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="a1006a64-ac6d-42cd-b971-b78a51fe5a53" InformativeScreenshot="a48aa34870c510811ed134e6212f8891.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1506,9 +1560,61 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="952,910.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,587.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Text="client_image" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvElementArea="228, 498, 292, 32" CvType="InputBox" DesignTimeRectangle="234, 505, 262, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="fd82a4cc-ece8-4489-b453-a2ebfe519884" InformativeScreenshot="183a38a47bf0d8cb9897ef7253909e66.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvTextArea="155, 506, 68, 15" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="157, 505, 67, 20" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="a69abbc0-c5b3-4400-a2ce-ae0d59f28135" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="416,239.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 800, 600" FilePath="D:\\Syncpoint\\Modules\\ClientPreview\\clientpreview.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATISURBVFhHvZdPaBxVHMcnTfZP/jSykgoeahXswaBmk209GhD06EFZd+ffzkYkCCKC4qUBaSmk6KUIUZJmJkIkFkOrbZHd2aDGHtx5I8GD9FC8KEHJIakNSWbem4blJ292Npm87G42bWa+8CWHwI8P3/e+837LcUEIoC3/m30yh0hRRriSQwRknyWfRWqDgGBgLCDyhbIIcXbc0QqgbeR3Z0AxSSln4m0KxwL6IT3AVbFMzil/BQ3HcZy8ZD+lIEfPIfxAMatwTQENvMKXnVzwyXEcRxNQTKdAk6NwLQCuimVbCQ8OYQpXqcE1AxQRxiIi54KHA2ijx5o3nYLCwDUCdOFMMhH8nfMKMYIcXTHxdr4BHAO4Gk5yXiHyJikpCD9g4eqlJxl4JdQ797bpFPJeci0ArkoopLaml6Ezb+JC3iSVEdNpCkctIYxlwx4LHs57IarJ7cI1A6zCkYlQ4BTTSdI7lzfJdjM4H+BqOMlxHEeTc+EQcQvhdz042cAruTDvnHesO4VoBOcCGnhNDrOttUIcBEYth1kI/wvRKlwu7JWp9kI0A6N2j9Wwx9Ll5U523JGLXZkOsmyQlVDvHLsyNbL7KWlQiNEliAgGviAZ+IaE8E1qgbq8a541Ip+kliDin7NHjVameq4+YfULMbwIHTJyLkoIb4oIV6iFmo2qeZ+zrsnfmdv2Sf+cfXr/T4gpJpnJIYxZoD2peXC0EOydo7CCQT4SDXx/z1rv/faoWfDMG2Q7axDjjV/tU/45DUWPRjGd8zmE1+uBuc+XV4h6yXlw91qDw4Qv428yBn6a46DNP6upRLTWqxh4XEZkww9WXZnqF+LZAsT4snPxMMlRuPRt/Az9avhntSThD0jIBpmUDUx8+9xavZWpfx6iZxfsieGfrC0KcRAcNT1WN7mHgaspfQd6ZORckwxccbcSk4yxa3pqCiJnF/B4Sre3UiUbXvnZdgFYOCa95eqdewS4mmhxZERmpDovxPAixM+U7I9TurVO4YZKNtC/r/2CgS/XhdvmD1OIVpW+A9F9yS1BhMIN6dZ/FMzvMws2vLqIIVs+gkI8jOidS5WsSzS5GtQg49QCPe4dyEcrxGHkwi3YE0O6vdUIrmb6v5d/tCFTPoJCtCr6ORnU7fmhklVhgVgndRtevHkf+j68dePJ0Vtd7KzAdGoR4knd+iqpW5iFqoElixY8d/VfSLx3DeLSDIlJM589Jswl2FmBiZZkoGhdSOr2Ogs3UNiC01fuQuLdb6FT1CggxERtMyaol7ul2SfYWYHppcJa72DJupTU7Q03NS+505N34fF3rkJ3Zhq6sirEBY0CQkzQrKiozXJhJvnCD5BIFq2ppG4RCtg/9w/0jczB8TenoOutaYgLahVO1CAquHYiglbkXlePs7MCU/8i9Azo9vXnv79XOTEyBz1pCualthfOdYTXKh2CNs+NToVXHNruvg++m4mJKvaD7YOrmddIO69+yglfhnfc3OhUJCJq56OCtt4QzHMHr1JvtvPqZS6tnWBHBSfx894Ir45HeW2jCdiO27Oq1Z6dng03SWEuEcmqk/QYG8G1Z3d9LDvtHMtcKXLi173sqOAkzXZHePW6W4j9qfnhqs5MV9oy6jyXnt/zE+J/PkNOLomBXpsAAAAASUVORK5CYII=" InformativeScreenshot="f84e132f684ef719f942facbb4cfa23f.png" Selector="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_54" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="06588b83-562a-41a2-b91a-bb39a40418c4" CvElementArea="1207, 1002, 200, 54" CvTextArea="1282, 1020, 48, 18" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Next' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Next' role='push button' automationid='' check:fulltext='Next' /&gt;" Guid="6a8bd06e-747b-43d7-b284-c786e3b2467a" InformativeScreenshot="3c91180d0823de7c7d2f20ae9b1dd294.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="4c34bfbc-851b-4830-9d11-40e5477075c2" CvElementArea="1207, 955, 200, 55" CvTextArea="1282, 974, 48, 18" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1210, 957, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Next' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Next' role='push button' automationid='' check:fulltext='Next' /&gt;" Guid="c9d1406c-7491-4c0a-8cb4-54b9e390d1dd" InformativeScreenshot="c4710632554463c38d00cbd6f14af139.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1521,9 +1627,9 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_55" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="4a60681c-1c51-4c2e-addb-8aea52528449" CvElementArea="1207, 1001, 199, 56" CvTextArea="1237, 1019, 139, 25" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' automationid='' check:fulltext='Capture Image' /&gt;" Guid="4a86f1a1-57e2-43d8-b1a8-c058c14f1dea" InformativeScreenshot="861bd8ef70c70c8a036468c46b556ef3.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="c287af40-0ab2-4304-8679-227a2b3ed9e8" CvTextArea="1065, 617, 156, 25" CvTextArgument="Attach an Image" CvType="Text" DesignTimeRectangle="1047, 604, 194, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="b289490b-e2dc-4a02-bab3-a547b9122aba" InformativeScreenshot="a48aa34870c510811ed134e6212f8891.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1536,7 +1642,59 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="952,910.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,587.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Text="client_image" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvElementArea="228, 498, 292, 32" CvType="InputBox" DesignTimeRectangle="234, 505, 262, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="fd82a4cc-ece8-4489-b453-a2ebfe519884" InformativeScreenshot="183a38a47bf0d8cb9897ef7253909e66.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvTextArea="155, 506, 68, 15" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="157, 505, 67, 20" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="a69abbc0-c5b3-4400-a2ce-ae0d59f28135" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="416,239.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 800, 600" FilePath="D:\\Syncpoint\\Modules\\ClientPreview\\clientpreview.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATISURBVFhHvZdPaBxVHMcnTfZP/jSykgoeahXswaBmk209GhD06EFZd+ffzkYkCCKC4qUBaSmk6KUIUZJmJkIkFkOrbZHd2aDGHtx5I8GD9FC8KEHJIakNSWbem4blJ292Npm87G42bWa+8CWHwI8P3/e+837LcUEIoC3/m30yh0hRRriSQwRknyWfRWqDgGBgLCDyhbIIcXbc0QqgbeR3Z0AxSSln4m0KxwL6IT3AVbFMzil/BQ3HcZy8ZD+lIEfPIfxAMatwTQENvMKXnVzwyXEcRxNQTKdAk6NwLQCuimVbCQ8OYQpXqcE1AxQRxiIi54KHA2ijx5o3nYLCwDUCdOFMMhH8nfMKMYIcXTHxdr4BHAO4Gk5yXiHyJikpCD9g4eqlJxl4JdQ797bpFPJeci0ArkoopLaml6Ezb+JC3iSVEdNpCkctIYxlwx4LHs57IarJ7cI1A6zCkYlQ4BTTSdI7lzfJdjM4H+BqOMlxHEeTc+EQcQvhdz042cAruTDvnHesO4VoBOcCGnhNDrOttUIcBEYth1kI/wvRKlwu7JWp9kI0A6N2j9Wwx9Ll5U523JGLXZkOsmyQlVDvHLsyNbL7KWlQiNEliAgGviAZ+IaE8E1qgbq8a541Ip+kliDin7NHjVameq4+YfULMbwIHTJyLkoIb4oIV6iFmo2qeZ+zrsnfmdv2Sf+cfXr/T4gpJpnJIYxZoD2peXC0EOydo7CCQT4SDXx/z1rv/faoWfDMG2Q7axDjjV/tU/45DUWPRjGd8zmE1+uBuc+XV4h6yXlw91qDw4Qv428yBn6a46DNP6upRLTWqxh4XEZkww9WXZnqF+LZAsT4snPxMMlRuPRt/Az9avhntSThD0jIBpmUDUx8+9xavZWpfx6iZxfsieGfrC0KcRAcNT1WN7mHgaspfQd6ZORckwxccbcSk4yxa3pqCiJnF/B4Sre3UiUbXvnZdgFYOCa95eqdewS4mmhxZERmpDovxPAixM+U7I9TurVO4YZKNtC/r/2CgS/XhdvmD1OIVpW+A9F9yS1BhMIN6dZ/FMzvMws2vLqIIVs+gkI8jOidS5WsSzS5GtQg49QCPe4dyEcrxGHkwi3YE0O6vdUIrmb6v5d/tCFTPoJCtCr6ORnU7fmhklVhgVgndRtevHkf+j68dePJ0Vtd7KzAdGoR4knd+iqpW5iFqoElixY8d/VfSLx3DeLSDIlJM589Jswl2FmBiZZkoGhdSOr2Ogs3UNiC01fuQuLdb6FT1CggxERtMyaol7ul2SfYWYHppcJa72DJupTU7Q03NS+505N34fF3rkJ3Zhq6sirEBY0CQkzQrKiozXJhJvnCD5BIFq2ppG4RCtg/9w/0jczB8TenoOutaYgLahVO1CAquHYiglbkXlePs7MCU/8i9Azo9vXnv79XOTEyBz1pCualthfOdYTXKh2CNs+NToVXHNruvg++m4mJKvaD7YOrmddIO69+yglfhnfc3OhUJCJq56OCtt4QzHMHr1JvtvPqZS6tnWBHBSfx894Ir45HeW2jCdiO27Oq1Z6dng03SWEuEcmqk/QYG8G1Z3d9LDvtHMtcKXLi173sqOAkzXZHePW6W4j9qfnhqs5MV9oy6jyXnt/zE+J/PkNOLomBXpsAAAAASUVORK5CYII=" InformativeScreenshot="f84e132f684ef719f942facbb4cfa23f.png" Selector="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="7d4e59f6-d735-4517-93b8-16ef14d4928a" CvElementArea="1207, 1002, 200, 54" CvTextArea="1282, 1020, 47, 18" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Save' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Save' role='push button' automationid='' check:fulltext='Save' /&gt;" Guid="6fc45dcd-80ef-445f-97b6-6d3dd0a12b45" InformativeScreenshot="d2d15ee82ad21fea7b9c2d1bacea6737.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -1749,9 +1907,9 @@
               </p:CVScope.UseLocalServer>
             </p:CVScope>
             <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="952,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_9" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_56" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="2856e6b3-4bf3-4b9e-9f9a-6efda115a566" CvElementArea="1148, 885, 210, 54" CvTextArea="1190, 902, 124, 22" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1151, 887, 205, 51" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='text' automationid='' check:fulltext='Capture Image' /&gt;" Guid="f163dd04-6f85-47ba-83c9-f18686976271" InformativeScreenshot="d6272e0ed367baa16ec12789420f5b31.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="62842c3f-7a2b-4b84-8594-5b5b6db6d625" CvElementArea="930, 885, 209, 54" CvTextArea="965, 902, 138, 22" CvTextArgument="Attach an Image" CvType="Button" DesignTimeRectangle="932, 887, 205, 51" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="ab4383e2-f332-4244-aaa4-7b18a69cabb5" InformativeScreenshot="18bfb507ac9db5f05e872bf22433316f.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1779,9 +1937,9 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_57" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="31f2121c-445c-4a12-8bed-775eb2e17e7c" CvElementArea="1207, 1001, 200, 56" CvTextArea="1237, 1019, 139, 25" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' automationid='' check:fulltext='Capture Image' /&gt;" Guid="8017e954-949d-4784-8701-14a5e372f307" InformativeScreenshot="f33019ac90637413edaa081062600e04.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable CVScreenId="d7ff36e8-0d59-4dc4-9d4c-f979dbf457c1" CvTextArea="1065, 617, 156, 25" CvTextArgument="Attach an Image" CvType="Text" DesignTimeRectangle="1047, 604, 194, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="9f3f216b-02ba-46ce-9b53-95b6b73373e8" InformativeScreenshot="c4c13ee3f5ee477ef274dcba6af7d2a8.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1794,24 +1952,61 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="952,910.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,587.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Text="client_image" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvElementArea="228, 498, 292, 32" CvType="InputBox" DesignTimeRectangle="234, 505, 262, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="fd82a4cc-ece8-4489-b453-a2ebfe519884" InformativeScreenshot="183a38a47bf0d8cb9897ef7253909e66.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvTextArea="155, 506, 68, 15" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="157, 505, 67, 20" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="a69abbc0-c5b3-4400-a2ce-ae0d59f28135" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="416,239.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 800, 600" FilePath="D:\\Syncpoint\\Modules\\ClientPreview\\clientpreview.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATISURBVFhHvZdPaBxVHMcnTfZP/jSykgoeahXswaBmk209GhD06EFZd+ffzkYkCCKC4qUBaSmk6KUIUZJmJkIkFkOrbZHd2aDGHtx5I8GD9FC8KEHJIakNSWbem4blJ292Npm87G42bWa+8CWHwI8P3/e+837LcUEIoC3/m30yh0hRRriSQwRknyWfRWqDgGBgLCDyhbIIcXbc0QqgbeR3Z0AxSSln4m0KxwL6IT3AVbFMzil/BQ3HcZy8ZD+lIEfPIfxAMatwTQENvMKXnVzwyXEcRxNQTKdAk6NwLQCuimVbCQ8OYQpXqcE1AxQRxiIi54KHA2ijx5o3nYLCwDUCdOFMMhH8nfMKMYIcXTHxdr4BHAO4Gk5yXiHyJikpCD9g4eqlJxl4JdQ797bpFPJeci0ArkoopLaml6Ezb+JC3iSVEdNpCkctIYxlwx4LHs57IarJ7cI1A6zCkYlQ4BTTSdI7lzfJdjM4H+BqOMlxHEeTc+EQcQvhdz042cAruTDvnHesO4VoBOcCGnhNDrOttUIcBEYth1kI/wvRKlwu7JWp9kI0A6N2j9Wwx9Ll5U523JGLXZkOsmyQlVDvHLsyNbL7KWlQiNEliAgGviAZ+IaE8E1qgbq8a541Ip+kliDin7NHjVameq4+YfULMbwIHTJyLkoIb4oIV6iFmo2qeZ+zrsnfmdv2Sf+cfXr/T4gpJpnJIYxZoD2peXC0EOydo7CCQT4SDXx/z1rv/faoWfDMG2Q7axDjjV/tU/45DUWPRjGd8zmE1+uBuc+XV4h6yXlw91qDw4Qv428yBn6a46DNP6upRLTWqxh4XEZkww9WXZnqF+LZAsT4snPxMMlRuPRt/Az9avhntSThD0jIBpmUDUx8+9xavZWpfx6iZxfsieGfrC0KcRAcNT1WN7mHgaspfQd6ZORckwxccbcSk4yxa3pqCiJnF/B4Sre3UiUbXvnZdgFYOCa95eqdewS4mmhxZERmpDovxPAixM+U7I9TurVO4YZKNtC/r/2CgS/XhdvmD1OIVpW+A9F9yS1BhMIN6dZ/FMzvMws2vLqIIVs+gkI8jOidS5WsSzS5GtQg49QCPe4dyEcrxGHkwi3YE0O6vdUIrmb6v5d/tCFTPoJCtCr6ORnU7fmhklVhgVgndRtevHkf+j68dePJ0Vtd7KzAdGoR4knd+iqpW5iFqoElixY8d/VfSLx3DeLSDIlJM589Jswl2FmBiZZkoGhdSOr2Ogs3UNiC01fuQuLdb6FT1CggxERtMyaol7ul2SfYWYHppcJa72DJupTU7Q03NS+505N34fF3rkJ3Zhq6sirEBY0CQkzQrKiozXJhJvnCD5BIFq2ppG4RCtg/9w/0jczB8TenoOutaYgLahVO1CAquHYiglbkXlePs7MCU/8i9Azo9vXnv79XOTEyBz1pCualthfOdYTXKh2CNs+NToVXHNruvg++m4mJKvaD7YOrmddIO69+yglfhnfc3OhUJCJq56OCtt4QzHMHr1JvtvPqZS6tnWBHBSfx894Ir45HeW2jCdiO27Oq1Z6dng03SWEuEcmqk/QYG8G1Z3d9LDvtHMtcKXLi173sqOAkzXZHePW6W4j9qfnhqs5MV9oy6jyXnt/zE+J/PkNOLomBXpsAAAAASUVORK5CYII=" InformativeScreenshot="f84e132f684ef719f942facbb4cfa23f.png" Selector="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="f280b82b-2841-4517-8579-a0418c3a3153" CvElementArea="1207, 1002, 200, 54" CvTextArea="1282, 1020, 48, 18" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Next' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Next' role='push button' automationid='' check:fulltext='Next' /&gt;" Guid="7922e1f2-4c2f-4c75-a19e-f32334209150" InformativeScreenshot="3c91180d0823de7c7d2f20ae9b1dd294.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Capture Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="84c09956-f4af-4a4d-ac73-9f31823be7de" CvElementArea="1207, 1001, 199, 56" CvTextArea="1237, 1019, 139, 25" CvTextArgument="Capture Image" CvType="Button" DesignTimeRectangle="1210, 1003, 194, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Capture Image' role='push button' automationid='' check:fulltext='Capture Image' /&gt;" Guid="29ce30b5-66be-497c-b45b-700fb09a3b7a" InformativeScreenshot="861bd8ef70c70c8a036468c46b556ef3.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1839,6 +2034,73 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Attach an Image'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_58" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="5dfcc4ff-d64f-4b98-930b-9f0774d47e30" CvTextArea="1065, 617, 156, 25" CvTextArgument="Attach an Image" CvType="Text" DesignTimeRectangle="1047, 604, 194, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Attach an Image' role='text' automationid='' check:fulltext='Attach an Image' /&gt;" Guid="1d66a535-cb42-48e6-8c8c-2f18b6355c9c" InformativeScreenshot="c4c13ee3f5ee477ef274dcba6af7d2a8.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="952,910.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,587.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Text="client_image" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvElementArea="228, 498, 292, 32" CvType="InputBox" DesignTimeRectangle="234, 505, 262, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="fd82a4cc-ece8-4489-b453-a2ebfe519884" InformativeScreenshot="183a38a47bf0d8cb9897ef7253909e66.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvTextArea="155, 506, 68, 15" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="157, 505, 67, 20" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="a69abbc0-c5b3-4400-a2ce-ae0d59f28135" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="416,239.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 800, 600" FilePath="D:\\Syncpoint\\Modules\\ClientPreview\\clientpreview.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATISURBVFhHvZdPaBxVHMcnTfZP/jSykgoeahXswaBmk209GhD06EFZd+ffzkYkCCKC4qUBaSmk6KUIUZJmJkIkFkOrbZHd2aDGHtx5I8GD9FC8KEHJIakNSWbem4blJ292Npm87G42bWa+8CWHwI8P3/e+837LcUEIoC3/m30yh0hRRriSQwRknyWfRWqDgGBgLCDyhbIIcXbc0QqgbeR3Z0AxSSln4m0KxwL6IT3AVbFMzil/BQ3HcZy8ZD+lIEfPIfxAMatwTQENvMKXnVzwyXEcRxNQTKdAk6NwLQCuimVbCQ8OYQpXqcE1AxQRxiIi54KHA2ijx5o3nYLCwDUCdOFMMhH8nfMKMYIcXTHxdr4BHAO4Gk5yXiHyJikpCD9g4eqlJxl4JdQ797bpFPJeci0ArkoopLaml6Ezb+JC3iSVEdNpCkctIYxlwx4LHs57IarJ7cI1A6zCkYlQ4BTTSdI7lzfJdjM4H+BqOMlxHEeTc+EQcQvhdz042cAruTDvnHesO4VoBOcCGnhNDrOttUIcBEYth1kI/wvRKlwu7JWp9kI0A6N2j9Wwx9Ll5U523JGLXZkOsmyQlVDvHLsyNbL7KWlQiNEliAgGviAZ+IaE8E1qgbq8a541Ip+kliDin7NHjVameq4+YfULMbwIHTJyLkoIb4oIV6iFmo2qeZ+zrsnfmdv2Sf+cfXr/T4gpJpnJIYxZoD2peXC0EOydo7CCQT4SDXx/z1rv/faoWfDMG2Q7axDjjV/tU/45DUWPRjGd8zmE1+uBuc+XV4h6yXlw91qDw4Qv428yBn6a46DNP6upRLTWqxh4XEZkww9WXZnqF+LZAsT4snPxMMlRuPRt/Az9avhntSThD0jIBpmUDUx8+9xavZWpfx6iZxfsieGfrC0KcRAcNT1WN7mHgaspfQd6ZORckwxccbcSk4yxa3pqCiJnF/B4Sre3UiUbXvnZdgFYOCa95eqdewS4mmhxZERmpDovxPAixM+U7I9TurVO4YZKNtC/r/2CgS/XhdvmD1OIVpW+A9F9yS1BhMIN6dZ/FMzvMws2vLqIIVs+gkI8jOidS5WsSzS5GtQg49QCPe4dyEcrxGHkwi3YE0O6vdUIrmb6v5d/tCFTPoJCtCr6ORnU7fmhklVhgVgndRtevHkf+j68dePJ0Vtd7KzAdGoR4knd+iqpW5iFqoElixY8d/VfSLx3DeLSDIlJM589Jswl2FmBiZZkoGhdSOr2Ogs3UNiC01fuQuLdb6FT1CggxERtMyaol7ul2SfYWYHppcJa72DJupTU7Q03NS+505N34fF3rkJ3Zhq6sirEBY0CQkzQrKiozXJhJvnCD5BIFq2ppG4RCtg/9w/0jczB8TenoOutaYgLahVO1CAquHYiglbkXlePs7MCU/8i9Azo9vXnv79XOTEyBz1pCualthfOdYTXKh2CNs+NToVXHNruvg++m4mJKvaD7YOrmddIO69+yglfhnfc3OhUJCJq56OCtt4QzHMHr1JvtvPqZS6tnWBHBSfx894Ir45HeW2jCdiO27Oq1Z6dng03SWEuEcmqk/QYG8G1Z3d9LDvtHMtcKXLi173sqOAkzXZHePW6W4j9qfnhqs5MV9oy6jyXnt/zE+J/PkNOLomBXpsAAAAASUVORK5CYII=" InformativeScreenshot="f84e132f684ef719f942facbb4cfa23f.png" Selector="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ok'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_42" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="e32e0651-2ad0-43fe-b60f-db9736d6f854" CvElementArea="1044, 794, 199, 54" CvTextArea="1129, 811, 30, 21" CvTextArgument="Ok" CvType="Button" DesignTimeRectangle="1047, 797, 194, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Ok' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Ok' role='push button' automationid='' check:fulltext='Ok' /&gt;" Guid="05a6cb76-102f-4e05-b8cb-f548c415de66" InformativeScreenshot="5c2cd0f57999e284b4564501e1d53dc7.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
@@ -1856,13 +2118,13 @@
             </uix:NClick>
             <uix:NCheckState DisplayName="Check App State '4Secondary IDIf'" sap:VirtualizedContainerService.HintSize="952,511.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="ce757fd7-a02d-4cb5-8575-a68996aa561d" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,260.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,143.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyTrue - Invoke Workflow File (Reusable\verifyTrue.xaml)" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Reusable\verifyTrue.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="verifyTrue - Invoke Workflow File (Reusable\verifyTrue.xaml)" sap:VirtualizedContainerService.HintSize="416,81.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Reusable\verifyTrue.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="outputOfVerification">No uploaded secondary image</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="titleOfVerification">Verify no secondary image is uploaded</InArgument>
@@ -1969,6 +2231,58 @@
                 <uix:TargetAnchorable CVScreenId="a964ab1a-428b-499f-b14d-490def231e4d" CvTextArea="452, 366, 151, 20" CvTextArgument="Client Overview" CvType="Text" DesignTimeRectangle="454, 362, 149, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Client Overview' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;&lt;wnd cls='FLUTTERVIEW' title='FLUTTERVIEW' /&gt;&lt;ctrl name='Client Overview' role='text' automationid='' check:fulltext='Client Overview' /&gt;" Guid="fa2cac10-ba64-44a7-8348-f34b51d10715" InformativeScreenshot="6c89b13f46d9c973b9e22167b015332b.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NCheckState.Target>
             </uix:NCheckState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="952,910.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,587.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="6f90f78c-7e1e-4f68-9fd9-8bc8b95f7b50" Text="client_image" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvElementArea="228, 498, 292, 32" CvType="InputBox" DesignTimeRectangle="234, 505, 262, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="fd82a4cc-ece8-4489-b453-a2ebfe519884" InformativeScreenshot="183a38a47bf0d8cb9897ef7253909e66.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9d4dca7d-d13d-45b9-baf7-21e4cbbc68d7" CvTextArea="155, 506, 68, 15" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="157, 505, 67, 20" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="a69abbc0-c5b3-4400-a2ce-ae0d59f28135" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="416,239.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 800, 600" FilePath="D:\\Syncpoint\\Modules\\ClientPreview\\clientpreview.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATISURBVFhHvZdPaBxVHMcnTfZP/jSykgoeahXswaBmk209GhD06EFZd+ffzkYkCCKC4qUBaSmk6KUIUZJmJkIkFkOrbZHd2aDGHtx5I8GD9FC8KEHJIakNSWbem4blJ292Npm87G42bWa+8CWHwI8P3/e+837LcUEIoC3/m30yh0hRRriSQwRknyWfRWqDgGBgLCDyhbIIcXbc0QqgbeR3Z0AxSSln4m0KxwL6IT3AVbFMzil/BQ3HcZy8ZD+lIEfPIfxAMatwTQENvMKXnVzwyXEcRxNQTKdAk6NwLQCuimVbCQ8OYQpXqcE1AxQRxiIi54KHA2ijx5o3nYLCwDUCdOFMMhH8nfMKMYIcXTHxdr4BHAO4Gk5yXiHyJikpCD9g4eqlJxl4JdQ797bpFPJeci0ArkoopLaml6Ezb+JC3iSVEdNpCkctIYxlwx4LHs57IarJ7cI1A6zCkYlQ4BTTSdI7lzfJdjM4H+BqOMlxHEeTc+EQcQvhdz042cAruTDvnHesO4VoBOcCGnhNDrOttUIcBEYth1kI/wvRKlwu7JWp9kI0A6N2j9Wwx9Ll5U523JGLXZkOsmyQlVDvHLsyNbL7KWlQiNEliAgGviAZ+IaE8E1qgbq8a541Ip+kliDin7NHjVameq4+YfULMbwIHTJyLkoIb4oIV6iFmo2qeZ+zrsnfmdv2Sf+cfXr/T4gpJpnJIYxZoD2peXC0EOydo7CCQT4SDXx/z1rv/faoWfDMG2Q7axDjjV/tU/45DUWPRjGd8zmE1+uBuc+XV4h6yXlw91qDw4Qv428yBn6a46DNP6upRLTWqxh4XEZkww9WXZnqF+LZAsT4snPxMMlRuPRt/Az9avhntSThD0jIBpmUDUx8+9xavZWpfx6iZxfsieGfrC0KcRAcNT1WN7mHgaspfQd6ZORckwxccbcSk4yxa3pqCiJnF/B4Sre3UiUbXvnZdgFYOCa95eqdewS4mmhxZERmpDovxPAixM+U7I9TurVO4YZKNtC/r/2CgS/XhdvmD1OIVpW+A9F9yS1BhMIN6dZ/FMzvMws2vLqIIVs+gkI8jOidS5WsSzS5GtQg49QCPe4dyEcrxGHkwi3YE0O6vdUIrmb6v5d/tCFTPoJCtCr6ORnU7fmhklVhgVgndRtevHkf+j68dePJ0Vtd7KzAdGoR4knd+iqpW5iFqoElixY8d/VfSLx3DeLSDIlJM589Jswl2FmBiZZkoGhdSOr2Ogs3UNiC01fuQuLdb6FT1CggxERtMyaol7ul2SfYWYHppcJa72DJupTU7Q03NS+505N34fF3rkJ3Zhq6sirEBY0CQkzQrKiozXJhJvnCD5BIFq2ppG4RCtg/9w/0jczB8TenoOutaYgLahVO1CAquHYiglbkXlePs7MCU/8i9Azo9vXnv79XOTEyBz1pCualthfOdYTXKh2CNs+NToVXHNruvg++m4mJKvaD7YOrmddIO69+yglfhnfc3OhUJCJq56OCtt4QzHMHr1JvtvPqZS6tnWBHBSfx894Ir45HeW2jCdiO27Oq1Z6dng03SWEuEcmqk/QYG8G1Z3d9LDvtHMtcKXLi173sqOAkzXZHePW6W4j9qfnhqs5MV9oy6jyXnt/zE+J/PkNOLomBXpsAAAAASUVORK5CYII=" InformativeScreenshot="f84e132f684ef719f942facbb4cfa23f.png" Selector="&lt;wnd app='clientpreview.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
