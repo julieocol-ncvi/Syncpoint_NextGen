@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TC07_RemindersBackButtonAndUpdateButtonDisplayed" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TC07_RemindersBackButtonAndUpdateButtonDisplayed" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_LastName" Type="InArgument(x:String)" />
     <x:Property Name="in_MiddleName" Type="InArgument(x:String)" />
@@ -43,6 +43,7 @@
       <x:String>UiPath.OCR.Activities</x:String>
       <x:String>UiPath.OCR.Contracts.Activities</x:String>
       <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -93,21 +94,28 @@
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,3540" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1019.2,3135.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,3516.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0f581ee7-7ee5-4358-8116-7f1d7f6ed37f" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Syncpoint" sap:VirtualizedContainerService.HintSize="1019.2,3112" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0f581ee7-7ee5-4358-8116-7f1d7f6ed37f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="985.6,3202.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="985.6,2797.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="maxImageMessage" />
             </Sequence.Variables>
@@ -116,28 +124,28 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_FirstName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_FirstName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Syncpoint Automation Testing" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">in_FirstName</CSharpReference>
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_MiddleName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_MiddleName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Syncpoint Automation Testing" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">in_MiddleName</CSharpReference>
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_LastName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="jrocol.contractor@pjlhuillier.com's workspace" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CIS_LastName" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Syncpoint Automation Testing" sap:VirtualizedContainerService.HintSize="952,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">in_LastName</CSharpReference>
                 </OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f581ee7-7ee5-4358-8116-7f1d7f6ed37f" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'Yes, I Understand'" sap:VirtualizedContainerService.HintSize="952,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f581ee7-7ee5-4358-8116-7f1d7f6ed37f" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="fa7fecaf-80f8-4814-8937-78b8eee9dbee" CvElementArea="835, 892, 251, 65" CvTextArea="886, 913, 145, 23" CvTextArgument="Yes, I Understand" CvType="Button" DesignTimeRectangle="874, 907, 172, 36" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_46.Button_QMLTYPE_7' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_46.Button_QMLTYPE_7.Label_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_46.Button_QMLTYPE_7' /&gt;&lt;ctrl automationid='QApplication.HomeScreenDialog_QMLTYPE_46.Button_QMLTYPE_7.Label_*' role='text' check:text='Yes, I Understand' /&gt;" Guid="d086561d-16d5-4939-a954-b008ff1259b8" InformativeScreenshot="6a4b103986f860af304081c5069ae880.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindow' title='Syncpoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -201,108 +209,22 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="032fb54f-e4d6-4bf8-b1a5-449c34cae47a" DisplayName="CV Screen Scope 'FLUTTER_RUNNER_WIN32_WI...'" sap:VirtualizedContainerService.HintSize="952,594.4" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
-              <p:CVScope.Body>
-                <ActivityAction x:TypeArguments="x:Object">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                    <p:CvGetTextWithDescriptor DelayScreenshotAfterScroll="{x:Null}" ScrollOffset="{x:Null}" DesignTimeCacheId="032fb54f-e4d6-4bf8-b1a5-449c34cae47a" DesignTimeScaleFactor="1.25" DisplayName="CV Get Text - Any Word Group" sap:VirtualizedContainerService.HintSize="400,244.8" sap2010:WorkflowViewState.IdRef="CvGetTextWithDescriptor_2" InformativeScreenshot="d607c34c5eaf8c5cbe56642f056298c2" NumberOfScrolls="2" RefreshBefore="True" ScrollDirection="None" Version="V6">
-                      <p:CvGetTextWithDescriptor.Descriptor>
-                        <InArgument x:TypeArguments="uc:CvDescriptor">
-                          <CSharpValue x:TypeArguments="uc:CvDescriptor" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8" xml:space="preserve">"Target: AnyWordGroup (108,34,345,19)" +
-"Anchor: Text 'Reminder:' (29,34,76,16)"</CSharpValue>
-                        </InArgument>
-                      </p:CvGetTextWithDescriptor.Descriptor>
-                      <p:CvGetTextWithDescriptor.DesignTimeDescriptor>
-                        <uc:CvDescriptor Id="922e5f83-cf53-476c-b127-10ea976092f0">
-                          <uc:CvDescriptor.Anchors>
-                            <x:Array Type="uc:CvElementDescriptor">
-                              <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="29, 34, 76, 16" ElementType="Text" Text="Reminder:" />
-                            </x:Array>
-                          </uc:CvDescriptor.Anchors>
-                          <uc:CvDescriptor.Target>
-                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="108, 34, 345, 19" ElementType="AnyWordGroup" />
-                          </uc:CvDescriptor.Target>
-                        </uc:CvDescriptor>
-                      </p:CvGetTextWithDescriptor.DesignTimeDescriptor>
-                      <p:CvGetTextWithDescriptor.Result>
-                        <OutArgument x:TypeArguments="x:String">
-                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">maxImageMessage</CSharpReference>
-                        </OutArgument>
-                      </p:CvGetTextWithDescriptor.Result>
-                    </p:CvGetTextWithDescriptor>
-                  </Sequence>
-                </ActivityAction>
-              </p:CVScope.Body>
-              <p:CVScope.DesignTimeCache>
-                <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
-              </p:CVScope.DesignTimeCache>
-              <p:CVScope.DesignTimeCacheContainer>
-                <uc:CvCacheContainer>
-                  <uc:CvCacheContainer.Caches>
-                    <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
-                      <uc:CVCache DataSent="False" DisplayName="Screen CV Get Text - '' (Main)" Id="032fb54f-e4d6-4bf8-b1a5-449c34cae47a" InformativeScreenshot="14f3398fe100c0709e05d2c8ce593a84" LogicalPosition="972, 218" OcrText="Search Reminder: Maximum of seven (7) images per client number." Position="972, 218" ScaleFactor="1.25" ScreenshotGuid="a9a41d5b-fa72-4833-8b91-3784dd909c84" ServerVersion="24.10">
-                        <uc:CVCache.CvAnchorRelations>
-                          <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
-                        </uc:CVCache.CvAnchorRelations>
-                        <uc:CVCache.CvUiElements>
-                          <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="8">
-                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="241, 9, 222, 48" />
-                            <uc:CvElementInfo Category="CheckBox" Confidence="Runtime" Region="247, 34, 18, 19" />
-                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="242, 8, 221, 47" />
-                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="246, 34, 20, 19" />
-                            <uc:CvElementInfo Category="RadioButton" Confidence="Runtime" Region="246, 36, 19, 18" />
-                          </scg:List>
-                        </uc:CVCache.CvUiElements>
-                        <uc:CVCache.OcrTexts>
-                          <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="10">
-                            <uc:OcrTextInfo Region="289, 25, 50, 16" Text="Search" />
-                            <uc:OcrTextInfo Region="29, 34, 76, 16" Text="Reminder:" />
-                            <uc:OcrTextInfo Region="108, 34, 72, 16" Text="Maximum" />
-                            <uc:OcrTextInfo Region="182, 34, 17, 16" Text="of" />
-                            <uc:OcrTextInfo Region="201, 38, 42, 12" Text="seven" />
-                            <uc:OcrTextInfo Region="246, 36, 20, 17" Text="(7)" />
-                            <uc:OcrTextInfo Region="268, 36, 52, 17" Text="images" />
-                            <uc:OcrTextInfo Region="322, 38, 26, 14" Text="per" />
-                            <uc:OcrTextInfo Region="350, 34, 40, 16" Text="client" />
-                            <uc:OcrTextInfo Region="392, 36, 61, 14" Text="number." />
-                          </scg:List>
-                        </uc:CVCache.OcrTexts>
-                      </uc:CVCache>
+            <uix:NGetText DisplayName="Get Text 'Reminder'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="0f581ee7-7ee5-4358-8116-7f1d7f6ed37f" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="1953a1e1-b3c4-4043-a4ee-58a3a2a4dbf3" CvTextArea="1117, 271, 433, 25" CvType="AnyWordGroup" DesignTimeRectangle="1117, 271, 433, 25" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="4486c0b5-72b9-46e2-acea-f528df0bda2a" InformativeScreenshot="3e97ae3328c1b1f9ec6f4d33c62551f8.png" ScopeSelectorArgument="&lt;wnd app='appsyncpoint.exe' cls='Qt682QWindowIcon' title='Syncpoint' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1953a1e1-b3c4-4043-a4ee-58a3a2a4dbf3" CvTextArea="1019, 271, 97, 21" CvTextArgument="Reminder:" CvType="Text" DesignTimeRectangle="1019, 271, 97, 21" ElementType="Text" Guid="62cfe128-2582-4232-a4b2-88f30a0be5d9" SearchSteps="CV" TargetType="ComputerVisionBased" />
                     </scg:List>
-                  </uc:CvCacheContainer.Caches>
-                </uc:CvCacheContainer>
-              </p:CVScope.DesignTimeCacheContainer>
-              <p:CVScope.OCREngine>
-                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
-                  <ActivityFunc.Argument>
-                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
-                  </ActivityFunc.Argument>
-                  <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_2" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000">
-                    <p1:UiPathScreenOCR.Image>
-                      <InArgument x:TypeArguments="sd:Image">
-                        <CSharpValue x:TypeArguments="sd:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">Image</CSharpValue>
-                      </InArgument>
-                    </p1:UiPathScreenOCR.Image>
-                  </p1:UiPathScreenOCR>
-                </ActivityFunc>
-              </p:CVScope.OCREngine>
-              <p:CVScope.Target>
-                <ui:Target Element="{x:Null}" Id="19dd950b-9896-459a-b2e3-cc87b80779b0" InformativeScreenshot="4dc30e25a9a32cf28f0a391c44708a4a" Selector="&lt;wnd cls='FLUTTER_RUNNER_WIN32_WINDOW' title='ClientPreview' /&gt;" WaitForReady="INTERACTIVE">
-                  <ui:Target.ClippingRegion>
-                    <ui:Region Rectangle="498, 1, 464, 82" />
-                  </ui:Target.ClippingRegion>
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                </ui:Target>
-              </p:CVScope.Target>
-              <p:CVScope.UseLocalServer>
-                <InArgument x:TypeArguments="x:Boolean" />
-              </p:CVScope.UseLocalServer>
-            </p:CVScope>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">maxImageMessage</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
             <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Maximum image reminder is displayed" sap:VirtualizedContainerService.HintSize="952,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
               <uta:VerifyExpression.Expression>
                 <InArgument x:TypeArguments="x:Boolean">
